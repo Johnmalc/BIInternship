@@ -1,0 +1,89 @@
+/*
+    Structure
+    1. Styles for all pages
+    2. Styles for specic pages
+    3. Styles for one page
+
+*/
+
+/* ----------------------------------------------------------------------------*/
+/* 1. General styles for all pages */
+.row .container { /* ???? */
+    margin-right: auto;
+    padding-right: 15px;
+}
+
+.navbar-left img {
+    width: 450px;
+    height: 80px;
+}
+
+.navbar-inverse {
+    background-color: white;
+    border-color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* vertical align of pictures > bottom */
+.span6 {
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
+}
+
+.smaller {
+    width: 200px; 
+    height:300px;
+}
+
+/* ----------------------------------------------------------------------------*/
+/* Styles for only for 01/02/04....html */
+#style-01 { /* used for body tag - id */
+    padding-top: 50px; /* 50px */
+    transform: scale(1.2); /* mozilla hack */
+    zoom: 120%; /* normal use case */
+    transform-origin: 10% 10%;
+    padding-right: 150px; 
+}
+
+#style-01 .navbar-right {
+    padding-right: 180px;
+}
+
+
+/* --------------------------------------------------------------------------*/
+/* Styles only for 03....html */
+#style-02 { /* used for body tag - id */
+    padding-top: 50px; /* 50px */
+}
+
+#style-02 .navbar-right {
+    padding-right: 0px;
+}
+
+#style-02 .row .row {
+    padding-top: 90px;
+}
+
+/* --------------------------------------------------------------------------*/
+/* used only for Passion.html */
+.main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+
