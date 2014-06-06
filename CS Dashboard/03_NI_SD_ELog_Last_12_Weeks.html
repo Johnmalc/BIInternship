@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta name="author" content="Dmitrij Petrov">
         <meta http-equiv="refresh" content="5" >
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles-01.css" rel="stylesheet">
+        <script type="text/javascript" src="time.js"></script> 
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -42,22 +42,22 @@
 
                     <div class="row">
 
-                        <div class="col-md-4 span6">
+                        <div class="col-lg-3 span6">
                             <img src="img/graph5.png" alt="Generic thumbnail">
                            <!-- <h4>Label</h4> -->
                         </div>
 
-                        <div class="col-md-4 span6">
+                        <div class="col-lg-3 span6">
                             <img src="img/graph6.png" alt="Generic thumbnail">
                             <!-- <h4>Label</h4> -->
                         </div>
                         
-                        <div class="col-md-4 span6">
+                        <div class="col-lg-3 span6">
                             <img src="img/graph7.png" alt="Generic thumbnail">
                             <!-- <h4>Label</h4>s -->
                         </div>
 
-                        <div class="col-md-4 span6">
+                        <div class="col-lg-3 span6">
                             <img src="img/graph8.png" alt="Generic thumbnail">
                             <!-- <h4>Label</h4> -->
                         </div>
@@ -65,11 +65,17 @@
                     </div>
                 </div>
             </div>
+
+            <footer class="container-fluid">
+                <h1 class="text-muted" id="date_time">
+                <script type="text/javascript">window.onload = date_time('date_time');</script>  
+                </h1>
+            </footer>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="https://rawgit.com/imsky/holder/master/holder.js"></script>
+
 
     </body>
 
