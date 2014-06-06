@@ -6,10 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta http-equiv="refresh" content="5" >
-        <meta name="author" content="Dmitrij Petrov">
+        <meta name="author" content="Dmitrij.Petrov@email.cz">
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles-01.css" rel="stylesheet">
+        <script type="text/javascript" src="time.js"></script> 
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -33,7 +34,7 @@
                                 </ul>
 
                                 <ul class="nav navbar-nav navbar-right"> 
-                                    <h1>CS @ NI Revenue in TEUR </h1>
+                                    <h1>Sum of today's Revenues </h1>
                                 </ul>
                             </div>
 
@@ -41,30 +42,34 @@
                     </nav>
 
                     <div class="row">
+                        <div class="row underline">
+                            <div class="col-lg-3"><h2>Sameday and E-log</h2> </div>
+                            <div class="col-lg-3"><h2>Same</h2> </div>
+                        </div>   
+                        
+                        <div class="row">
+                            <div class="col-lg-6 span6">
+                                <img src="img/graph9.png" style="width: 230px; height:300px;" alt="Generic thumbnail">
+                            </div>
 
-                        <div class="col-md-4 span6">
-                            <img src="img/graph3.png" style="width: 230px; height:300px;" alt="Generic thumbnail">
-                            <!-- <h4>Label</h4> -->
+                            <div class="col-lg-6 span6">
+                                <img src="img/graph4.png" style="width: 300px; height:400px;" alt="Generic thumbnail">
+                            </div>
                         </div>
-
-                        <div class="col-md-4 span6">
-                            <img src="img/graph4.png" style="width: 300px; height:400px;" alt="Generic thumbnail">
-                            <!-- <h4>Label</h4> -->
-                        </div>
-
-                        <div class="col-md-4 span6">
-                            <img src="img/graph9.png" alt="Generic thumbnail">
-                            <!-- <h4>Label</h4> -->
-                        </div>
-
                     </div>
                 </div>
             </div>
+
+            <footer class="container-fluid">
+                <h1 class="text-muted" id="date_time">
+                <script type="text/javascript">window.onload = date_time('date_time');</script>  
+                </h1>
+            </footer>
+
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="https://rawgit.com/imsky/holder/master/holder.js"></script>
 
     </body>
 
