@@ -6,7 +6,6 @@
 
 */
 
-/* ----------------------------------------------------------------------------*/
 /* 1. General styles for all pages */
 .row .container { /* ???? */
     margin-right: auto;
@@ -27,8 +26,9 @@ h1 {
     font-size: 40px;
 }
 
-h4 {
-    margin-bottom: 30px;
+h2 {
+    /*margin-bottom: 30px;*/
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -44,25 +44,37 @@ h4 {
     height:300px;
 }
 
+footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 65px;
+  background-color: #f5f5f5;
+}
+
 /* ----------------------------------------------------------------------------*/
-/* Styles for only for 01/02/04....html */
+/* Styles for only for 01/03....html */
 #style-01 { /* used for body tag - id */
-    padding-top: 50px; /* 50px */
-    transform: scale(1.2); /* mozilla hack */
-    zoom: 120%; /* normal use case */
-    transform-origin: 10% 10%;
-    padding-right: 150px; 
+    padding-top: 50px;
+    /*transform: scale(1.2); /* mozilla hack */
+    /*zoom: 120%; /* normal use case */
+    /*transform-origin: 10% 10%;*/
+  /*  padding-right: 150px; */
 }
 
 #style-01 .navbar-right {
     padding-right: 180px;
 }
 
+#style-01 .row .row .underline h2 {
+    text-decoration: underline;
+}
 
 /* --------------------------------------------------------------------------*/
-/* Styles only for 03....html */
+/* Styles only for 02/04....html */
 #style-02 { /* used for body tag - id */
-    padding-top: 50px; /* 50px */
+    padding-top: 50px; 
 }
 
 #style-02 .navbar-right {
@@ -72,9 +84,6 @@ h4 {
 #style-02 .row .row {
     padding-top: 90px;
 }
-
-/* --------------------------------------------------------------------------*/
-/* used only for Passion.html */
 .main {
   padding: 20px;
 }
@@ -87,3 +96,5 @@ h4 {
 }
 
 
+/* --------------------------------------------------------------------------*/
+/* Styles only for 01....html */
