@@ -44,18 +44,22 @@ h2 {
     height:300px;
 }
 
-.footer {
+footer {
   position: absolute;
-  bottom: 15px;
-  /* Set the fixed height of the footer here  */
-  height: 65px;
-  background-color: white;
+  bottom: 5px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 5px;
 }
 
 /* ----------------------------------------------------------------------------*/
-/* Styles for only for 01/04....html */
+/* Styles for only for 01/03....html */
 #style-01 { /* used for body tag - id */
     padding-top: 50px;
+    /*transform: scale(1.2); /* mozilla hack */
+    /*zoom: 120%; /* normal use case */
+    /*transform-origin: 10% 10%;*/
+  /*  padding-right: 150px; */
 }
 
 #style-01 .navbar-right {
@@ -66,9 +70,8 @@ h2 {
     text-decoration: underline;
 }
 
-
 /* --------------------------------------------------------------------------*/
-/* Styles only for 02/03....html */
+/* Styles only for 02/04....html */
 #style-02 { /* used for body tag - id */
     padding-top: 50px; 
 }
@@ -77,48 +80,33 @@ h2 {
     padding-right: 0px;
 }
 
-#style-02 .row {
+#style-02 .row .row {
     padding-top: 90px;
 }
-
-#style-02 .footer {
- /* position: absolute;*/
-  bottom: 15px;
-  /* Set the fixed height of the footer here  */
-  height: 65px;
-  background-color: white;
-}
-
-#style-02 .span7 {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
-    padding-left: 10px;
-}
-#style-02 th {
-    padding: 5px;
-}
 .main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
     padding-right: 40px;
     padding-left: 40px;
+  }
 }
-
 .colorbox { 
     float: top;
-    width: 20px;
-    height: 20px;
-    margin: 5px 5px 5px 5px;
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px 0px 5px;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(0,0,0,.2);
 }
-
-ul {
-    list-style-type: none;
+.footer {
+ /* position: absolute;*/
+  bottom: 35px;
+  /* Set the fixed height of the footer here  */
+  height: 35px;
+  background-color: white;
 }
-
-/* --------------------------------------------------------------------------*/
-/* Styles only for 01....html */
-
-
 
