@@ -15,11 +15,11 @@ shinyUI(pageWithSidebar(
   # Sidebar with a slider input for number of observations
   sidebarPanel(
     sliderInput("Year", "Choose year to be displayed:", 
-                min=2007, max=2014, value=2007,  step=NULL,
-                format="###0",animate=animationOptions(interval = 5000, 
-                                                       loop = FALSE,
-                                                       playButton = NULL,
-                                                      pauseButton = NULL))
+        min=2007, max=2014, value=2007,  step=NULL,
+        format="###0",animate=animationOptions(interval = 5000, 
+                                            loop = FALSE,
+                                            playButton = NULL,
+                                            pauseButton = NULL))
     
   ),
  
