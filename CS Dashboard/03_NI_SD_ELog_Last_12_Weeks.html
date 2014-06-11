@@ -8,111 +8,117 @@
         <meta http-equiv="refresh" content="" >
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles-01.css" rel="stylesheet">
+        <link href="03_NI_SD_ELog_Last_12_Weeks.css" rel="stylesheet">
         <script type="text/javascript" src="time.js"></script> 
     </head>
 
-    <body id="style-02">
-        <div class="container-fluid">            
-       <!-- <div class="row">-->
+    <body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-lg-5">
+                    <img src="img/logo.jpg" width="450" height="80">
+				</div>
+				<div class="col-lg-7">
+	                <h1>Last 12 weeks revenues @ CS NI</h1>
+				</div>
+			</div>
 
-                <nav class="navbar navbar-inverse" role="navigation">
-                    <div class="container">
-                        
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-left"> 
-                                <img src="img/logo.jpg">
-                            </ul>
+			<div class="row clearfix">
+				<div class="col-lg-3  ">
+                    <img src="img/graph5.png" alt="Generic thumbnail">
+				</div>
+				<div class="col-lg-3  ">
+			        <img src="img/graph6.png" alt="Generic thumbnail">
+				</div>
+				<div class="col-lg-3  ">
+                    <img src="img/graph7.png" alt="Generic thumbnail">
+				</div>
+				<div class="col-lg-3  ">
+                    <img src="img/graph8.png" alt="Generic thumbnail">
+				</div>
+			</div>
 
-                            <ul class="nav navbar-nav navbar-right"> 
-                                <h1>Last 12 weeks revenues </h1>
-                            </ul>
-                        </div>
+			<div class="row clearfix">
+				<div class="col-lg-6 col-lg-offset-3 ">
+					<table>
+						<thead>
+							<tr>
+					            <th>Colors: </th>
+					            <th></th>
+					            <th>Symbols</th>
+					            <th></th>
+					        </tr>
+						</thead>
+	                    <tbody>
+	                        <tr>
+	                            <td>
+	                                <div class="colorbox" style="background-color: red;"></div>
+	                            </td>
+	                            <td>
+	                                <h4 class="span6">We are 40% of our budget</h4>       
+	                            </td>
+	                            <td>
+	                               <img src="blackTRG.png" width="20" height="40" />  <!-- this is hack, dont change otherwise it is not simmetric -->    
+	                            </td>
+	                            <td>
+	                            	<h4 class="span7">Our Budget here</h4>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>
+	                                <div class="colorbox" style="background-color: orange;"></div>
+	                            </td>
+	                            <td>
+	                                <h4 class="span6">We are 60% of our budget</h4>
+	                            </td>
+	                            <td>
+	                               <img src="whiteTRG.png" width="20" height="30" />     
+	                            </td>
+	                            <td>
+	                            	<h4 class="span7">Our current revenues</h4>
+	                            </td>
+	                        </tr> 
+	                        <tr>
+	                            <td>
+	                                <div class="colorbox" style="background-color: yellow;"></div>
+	                            </td>
+	                            <td>
+	                                <h4 class="span6">We are 80% of our budget</h4>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>
+	                                <div class="colorbox" style="background-color: yellowgreen;"></div>
+	                            </td>
+	                            <td>
+	                                <h4 class="span6">We are at par with our budget</h4>
+	                            </td>
+	                        </tr>
+	                        <tr>
+	                            <td>
+	                                <div class="colorbox" style="background-color: green;"></div>
+	                            </td>
+	                            <td>
+	                                <h4 class="span6">We are 20% <b>over</b> our budget</h4>
+	                            </td>
+	                        </tr>       
+	                    </tbody>                  
+	                </table> 
+				</div>
+			</div>
 
-                    </div>
-                </nav>
-
-                <div class="row">
-
-                    <div class="col-lg-3 span6">
-                        <img src="img/graph5.png" alt="Generic thumbnail">
-                    </div>
-
-                    <div class="col-lg-3 span6">
-                        <img src="img/graph6.png" alt="Generic thumbnail">
-                    </div>
-                    
-                    <div class="col-lg-3 span6">
-                        <img src="img/graph7.png" alt="Generic thumbnail">
-                    </div>
-
-                    <div class="col-lg-3 span6">
-                        <img src="img/graph8.png" alt="Generic thumbnail">
-                    </div>
-
-                </div>
-
-
-                <div class="col-lg-12 col-lg-offset-4 row">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="colorbox" style="background-color: #013F7A;"></div>
-                                </td>
-                                <td>
-                                    <p class="span6">We are at 40% of our budget</p>       
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="colorbox" style="background-color: #9A6198;"></div>
-                                </td>
-                                <td>
-                                    <p class="span6">We are at 60% of our budget</p>
-                                </td>
-                            </tr> 
-                            <tr>
-                                <td>
-                                    <div class="colorbox" style="background-color: #FFF100;"></div>
-                                </td>
-                                <td>
-                                    <p class="span6">We are at 80% of our budget</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="colorbox" style="background-color: #F5185A;"></div>
-                                </td>
-                                <td>
-                                    <p class="span6">We are at par with our budget</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="colorbox" style="background-color: #50A278;"></div>
-                                </td>
-                                <td>
-                                    <p class="span6">We are at 20% <b>over</b> our budget</p>
-                                </td>
-                            </tr>       
-                        </tbody>                  
-                    </table>   
-                </div>
-       <!-- </div> -->
-
-            <footer>
-                <h1 class="text-muted" id="date_time">
-                <script type="text/javascript">window.onload = date_time('date_time');</script>  
-                </h1>
-            </footer>
-        </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+			<div class="row clearfix">
+				<div class="col-lg-10 footer">
+					<h1 class="text-muted" id="date_time">
+		                <script type="text/javascript">window.onload = date_time('date_time');</script>  
+		            </h1>
+				</div>
+			</div>
+		</div>
 
 
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
+	</body>
 </html>
-
