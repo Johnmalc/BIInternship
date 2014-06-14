@@ -4,5 +4,6 @@
 .Rhistory
 .RData
 .csv
-*.ai
-*.svg
+img/
+svg_ai/
+support_img/
