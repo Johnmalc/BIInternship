@@ -1,0 +1,54 @@
+
+h1 {
+    font-size: 40px;
+}
+
+/* vertical align of pictures > bottom */
+.span6 {
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
+}
+.span7 {
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+    padding-left: 10px;
+}
+/* --------------------------------------------------------------------------*/
+/* Styles only for 02/03....html */
+#style-03 { /* used for body tag - id */
+    padding-top: 10px; 
+}
+
+#style-03 .navbar-right {
+    padding-right: 0px;
+}
+#style-03 .row {
+    padding-top: 20px;
+}
+
+#style-03 .footer {
+ /* position: absolute;*/
+  bottom: 15px;
+  /* Set the fixed height of the footer here  */
+  height: 35px;
+  background-color: white;
+}
+
+#style-03 th {
+    padding: 5px;
+}
+
+.colorbox { 
+    float: top;
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px 0px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+}
+
+
+

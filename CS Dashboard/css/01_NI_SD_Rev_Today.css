@@ -2,7 +2,7 @@ h1 {
     font-size: 40px;
 }
 
-.test {
+.row {
     padding-top: 70px;
 }
 .padding {
@@ -18,12 +18,18 @@ h1 {
     display: table-cell;
     vertical-align: top;
     float: none;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 /* vertical align of pictures > bottom */
 .span6 {
     display: table-cell;
     vertical-align: bottom;
+    float: none;
+}
+
+.span5 {
+    display: table-cell;
+    vertical-align: top;
     float: none;
 }
 
@@ -41,4 +47,10 @@ h1 {
     padding-right: 60px;
 }
 
-
+.positing h2 {
+    float: center;
+    padding-top: -5px;
+}
+.position img {
+    float: left;
+}
