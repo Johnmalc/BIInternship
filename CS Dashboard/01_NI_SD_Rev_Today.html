@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,17 +9,17 @@
         <meta http-equiv="refresh" content="" >
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="01_NI_SD_Rev_Today.css" rel="stylesheet">
-        <script type="text/javascript" src="time.js"></script> 
-        <script type="text/javascript" src="ocrad.js"></script> 
-        <script type="text/javascript" src="ocr.js"></script> 
+        <link href="css/01_NI_SD_Rev_Today.css" rel="stylesheet">
+        <script type="text/javascript" src="js/time.js"></script> 
+        <script type="text/javascript" src="js/ocrad.js"></script> 
+        <script type="text/javascript" src="js/ocr.js"></script> 
     </head>
 
     <body>
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-lg-5 column">
-                    <img src="img/logo.jpg" width="450" height="80">
+                    <img src="support_img/logo.jpg" width="450" height="80">
                 </div>
                 <div class="col-lg-7 column">
                     <h1>Real-time Revenue Update @ CS NI</h1>
@@ -37,7 +38,7 @@
 
                 <div class="row clearfix doleva">
                     <div class="col-lg-2 span6">
-                        <img src="img/sdrailv.png" style="width: 300px; height:400px;"alt="Generic thumbnail">
+                        <img src="img/sdrailv.png" style="width: 300px; height:400px;" alt="Generic thumbnail">
                     </div>
                     <div class="col-lg-2 span6">
                         <img src="img/sdairv.png" style="width: 300px; height:430px;" alt="Generic thumbnail">      
@@ -51,7 +52,7 @@
                     </div>
 
                     <div class="col-lg-2 span6 ">
-                        <img src="img/elogv.png" style="width: 300px; height:490px;" alt="Exmplanation">
+                        <img src="support_img/sv.svg" style="width: 300px; height:490px;" alt="Exmplanation">
                     </div>
                 </div>
             </div>
@@ -103,60 +104,37 @@
                         <script type="text/javascript">window.onload = date_time('date_time');</script>  
                     </h1>
                 </div>
-
-                <div class="col-lg-6 footer span5">
-                    <div class="col-lg-3">
-                        <h2>
-                            <img src="tongue.png" width="32px" ALIGN="ABSMIDDLE"> 60,0
-                        </h2>
-                    </div>
-                    
-                    <div class="col-lg-3">
-                        <h2> 
-                            <img src="pizza.png" width="32px" ALIGN="ABSMIDDLE">
-                            <p id="ocr">
-                            <script type="text/javascript">
-                                window.onload = ocr('ocr');
-                            </script></p>
-                        </h2>
-                    </div>
-
-                </div>
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="support_img/tongue.png" width="32px" />
+                            </td>
+                            <td id="ocr">
+                                <script type="text/javascript">
+                                    window.onload = ocr('ocr');
+                                </script>       
+                            </td>
+                            <td>
+                                <img src="support_img/pizza.png" width="32px" />
+                            </td>
+                            <td id="ocr2">
+                                <script type="text/javascript">
+                                    window.onload = ocr('ocr2');
+                                </script>       
+                            </td>
+                        </tr>
+                    </tbody>                  
+                </table> 
             </div>
 
         </div>
 
-        <script type="text/javascript">
-        /*    function OCRImage(image){
-                var canvas = document.createElement('canvas')
-                canvas.width = image.naturalWidth;
-                canvas.height = image.naturalHeight;
-                canvas.getContext('2d').drawImage(image, 0, 0)
-                return OCRAD(canvas)
-            }
-
-            function OCRPath(url, callback){
-                var image = new Image()
-                image.src = url;
-                image.onload = function(){ 
-                    callback(OCRImage(image))
-                }
-            }
-            
-            OCRPath("img/sdetotal.png", function(words){
-                myString = words.replace(/^[0-9]/g, "");
-                console.log(myString);
-                return console.log(words);
-            });
-        */
-        </script>
- 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     </body>
 
 </html>
-
-
 
