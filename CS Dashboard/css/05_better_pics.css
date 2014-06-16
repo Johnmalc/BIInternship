@@ -1,3 +1,12 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 75px;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -5,42 +14,16 @@ h1 {
 .row {
     padding-top: 70px;
 }
+
 .padding {
     padding-top: 30px;
 }
 
-.footer {
-  bottom: 15px;
-  height: 65px;
-}
-
-.span7 {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
-    padding-left: 5px;
-}
 /* vertical align of pictures > bottom */
 .span6 {
     display: table-cell;
     vertical-align: bottom;
     float: none;
-}
-
-.span5 {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
-}
-
-.colorbox { 
-    float: top;
-    width: 40px;
-    height: 40px;
-    margin: 5px 5px 0px 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0,0,0,.2);
 }
 
 .doleva {
@@ -49,8 +32,8 @@ h1 {
 
 /* http://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
 .fourth {
-    background-image: url('file:///C:/Users/Dima/Documents/BIInternship.git/CS%20Dashboard/img/elogv.png');
-    width: 250px;
+    background-image: url('../img/elogv.png');
+    width: 220px;
     height: 490px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
@@ -58,8 +41,8 @@ h1 {
 }
 
 .third {
-    background-image: url('file:///C:/Users/Dima/Documents/BIInternship.git/CS%20Dashboard/img/sdtotalv.png');
-    width: 250px;
+    background-image: url('../img/sdtotalv.png');
+    width: 220px;
     height: 460px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
@@ -67,7 +50,7 @@ h1 {
 }
 
 .second {
-    background-image: url('file:///C:/Users/Dima/Documents/BIInternship.git/CS%20Dashboard/img/sdairv.png');
+    background-image: url('../img/sdairv.png');
     width: 250px;
     height: 430px;
     background-position: center;
@@ -76,10 +59,30 @@ h1 {
 }
 
 .first {
-    background-image: url('file:///C:/Users/Dima/Documents/BIInternship.git/CS%20Dashboard/img/sdrailv.png');
+    background-image: url('../img/sdrailv.png');
     width: 250px;
     height: 400px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    /* Set the fixed height of the footer here */
+    height: 75px;
+    background-color: #BAAE94;
+}
+
+#levy {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    /* Set the fixed height of the footer here */
+    height: 75px;
+    background-color: #BAAE94;
+    font-size: 30px;
+    color: blue;
 }
