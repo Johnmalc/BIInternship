@@ -1,3 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 75px;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -6,34 +15,26 @@ h1 {
     padding-top: 70px;
 }
 
-.footer {
-  bottom: 15px;
-  height: 65px;
+.doprava {
+  padding-left: 75px;
 }
 
-.span7 {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
-    padding-left: 10px;
-}
-/* vertical align of pictures > bottom */
-.span6 {
-    display: table-cell;
-    vertical-align: bottom;
-    float: none;
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  /* Set the fixed height of the footer here */
+  height: 75px;
+  background-color: #BAAE94;
 }
 
-.colorbox { 
-    float: top;
-    width: 40px;
-    height: 40px;
-    margin: 5px 5px 0px 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0,0,0,.2);
+#levy {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    /* Set the fixed height of the footer here */
+    height: 75px;
+    background-color: #BAAE94;
+    font-size: 30px;
+    color: blue;
 }
-
-
-
-
