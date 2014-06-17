@@ -13,7 +13,8 @@ function date_time(id) {
         curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes(),
         curSeconds = objToday.getSeconds() < 10 ? "0" + objToday.getSeconds() : objToday.getSeconds(),
         curMeridiem = objToday.getHours() > 12 ? "PM" : "AM";
-    var today = curHour + " : " + curMinute + " : " + curSeconds + " " +  curMeridiem + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " +curYear;
+    var today = curHour + ":" + curMinute + ":" + curSeconds + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " +curYear;
+    // " " +  curMeridiem +
     document.getElementById(id).innerHTML = today;
     setTimeout('date_time("'+id+'");','1000');
     return true;
