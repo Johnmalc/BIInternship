@@ -22,3 +22,7 @@ In the "R Scripts" folder you can find **R-projects** which I wrote additionally
 - RStudio
 
 **MIT Licence** 
+
+# Notes #
+
+- http://stackoverflow.com/questions/1144783/replacing-all-occurrences-of-a-string-in-javascript
