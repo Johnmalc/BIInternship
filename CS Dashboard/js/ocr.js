@@ -19,9 +19,21 @@ function ocr(id) {
     // http://stackoverflow.com/questions/5873810/how-can-i-get-last-characters-of-a-string-using-javascript
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     OCRPath("img/sdelogv.png", function(words){
+        //console.log(words);
         var myString = words.replace(/[0-9]+(?!.*[0-9])/, ""); // first match string with a regex
         var StringLastChars = myString.slice(-5); // we want just last, up-to 4 characters
-        var newString = StringLastChars.replace("&", "8"); // must be otherwise doesn't recognize 8
+        console.log(StringLastChars);
+      /*  for (var i = 0; i < 6 ; i++) {
+            if (StringLastChars.contains("&") == true) {
+                var rr = StringLastChars.replace("&//g", "8");
+                 console.log(rr);
+            } else{
+                 
+            };
+        };*/
+        var find = "&";
+        var re = new RegExp(find, "g");
+        var newString = StringLastChars.replace(re, "8"); // must be otherwise doesn't recognize 8
         document.getElementById(id).innerHTML = newString;
         return console.log(newString);
     });
