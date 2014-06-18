@@ -3,9 +3,9 @@
 *-Ex.R
 .Rhistory
 .RData
-.csv
-.xls
-.xlsx
+*.csv
+*.xls
+*.xlsx
 img/
 svg_ai/
 support_img/
