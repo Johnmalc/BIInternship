@@ -6,6 +6,8 @@
 *.csv
 *.xls
 *.xlsx
+*.zip
+*.rar
 img/
 svg_ai/
 support_img/

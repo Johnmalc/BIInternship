@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    /* http://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page */
+    overflow-x:hidden;
     margin-bottom: 75px;
 }
 

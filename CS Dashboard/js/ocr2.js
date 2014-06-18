@@ -1,4 +1,4 @@
-function ocr(id) {  
+function ocr2(id) {  
 
     function OCRImage(image){
         var canvas = document.createElement('canvas')
@@ -19,14 +19,9 @@ function ocr(id) {
     // http://stackoverflow.com/questions/5873810/how-can-i-get-last-characters-of-a-string-using-javascript
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     OCRPath("img/sdelogv.png", function(words){
-        //console.log(words);
-        var myString = words.replace(/[0-9]+(?!.*[0-9])/, ""); // first match string with a regex
-        var StringLastChars = myString.slice(-5); // we want just last, up-to 4 characters
-        var find = "&";
-        var re = new RegExp(find, "g");
-        var newString = StringLastChars.replace(re, "8"); // must be otherwise doesn't recognize 8
-        document.getElementById(id).innerHTML = newString;
-        return console.log(newString);
+        var myString = words.substring(1,5); // print first 3 number with ,
+        document.getElementById(id).innerHTML = myString;
+        return console.log(myString);
     });
 
     return true;
