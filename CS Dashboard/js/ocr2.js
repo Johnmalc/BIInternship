@@ -15,7 +15,8 @@ function ocr2(id) {
             callback(OCRImage(image))
         }
     }
-    
+
+    // This part is only used for budget value where the value is located at the top of the picture
     // http://stackoverflow.com/questions/5873810/how-can-i-get-last-characters-of-a-string-using-javascript
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     OCRPath("img/sdelogv.png", function(words){
