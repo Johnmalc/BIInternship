@@ -96,3 +96,21 @@ h1 {
     font-size: 30px;
     color: blue;
 }
+.yellow {
+    background-color: rgb(255,179,0);
+}
+.blue {
+    background-color: rgb(0,0,102);
+}
+.seda {
+    background-color: rgb(102,102,102);
+}
+.red {
+    background-color: rgb(243,33,37);
+}
+.red2 {
+    background-color: rgb(209,0,19);
+}
+.DC9A4D {
+    background-color: #DC9A4D;
+}
