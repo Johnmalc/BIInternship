@@ -34,7 +34,6 @@ function ocr(id) {
         var Budget = words.substring(1,5); // print first 3 number with ,
         var numberToCompareWith = parseFloat(Budget.replace(',', '.')); // JS only accepts . not a comma !
 
-
         if (numberToCompare < numberToCompareWith) {         
             var thumbContainer = document.getElementsByClassName("thmbDiv");
             var thumbnail = document.createElement("img");
@@ -48,7 +47,7 @@ function ocr(id) {
             thumbContainer[0].appendChild(thumbnail);
             thumbnail.src = "support_img/pizza.png";
             thumbnail.style.height = "55px";
-            thumbnail.style.width = "55px";
+            thumbnail.style.width = "90px";
         };
 
         return console.log(Actual);
@@ -80,6 +79,7 @@ function ocr2(id) {
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     OCRPath("img/sdelogv.png", function(words){
         var Budget = words.substring(1,5); // print first 3 number with ,
+        var numberToWith = parseFloat(Budget.replace(',', '.')); // JS only accepts . not a comma !
         document.getElementById(id).innerHTML = Budget;
         return console.log(Budget);
     });
