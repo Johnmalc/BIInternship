@@ -9,11 +9,26 @@
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <script type="text/javascript" src="js/csv.js"></script>
         <script type="text/javascript" src="js/ourFunc.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.rawgit.com/antimatter15/ocrad.js/master/ocrad.js" ></script>  
     </head>
 
     <body>
+
+    <script type="text/javascript"> 
+        $.ajax({
+            url: "support_img/RealTimeRevenueFooter.csv",
+            dataType: 'text',
+            cache: false
+        }).done(function(csvAsString){
+            csvAsArray=csvAsString.csvToArray({ rSep:'|' }, {head:true});
+            csvAsArray[0].toString();        
+            document.getElementById("output").innerHTML=csvAsArray[0];
+        });
+    </script>
+
         <div class="container-fluid">
             <div class="row nahoru">
                 <div class="col-lg-5">
@@ -40,12 +55,6 @@
                 
             </div>
 
-            <div class="row nahoruVice">
-                <div class="col-lg-3 col-lg-offset-5">
-                    <img src="support_img/sv2.svg" alt="Generic thumbnail">
-                </div>
-            </div>
-
             <div class="row ">
 
                 <div class="col-lg-8" id="footer">
@@ -57,31 +66,25 @@
                 <table id="levy" class="col-lg-4 col-lg-offset-6">
                     <tbody>
                         <tr>
-                            <td style="font-size:36px;">Current</td>
-                            <td>
-                                <img class="thmbDiv" />
-                            </td>
-                            <td id="ocr" style="font-size: 40px;">
-                                <script type="text/javascript">
-                                    window.onload = ocr('ocr');
-                                </script>
-                            </td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td style="font-size:36px;"><b>Goal</b></td>
-                            <td>
-                                <img src="support_img/emo.png" height="55px" />
-                            </td>
-                            <td id="ocr2" style="font-size: 40px;"> 
+                            <td style="font-size:36px;">Current Total</td>
+                            
+                            <td id="output" style="font-size: 40px;"></td>
+                            <td style="font-size:36px;">/ &nbsp;&nbsp;</td>
+
+                            <td id="ocr2" style="font-size: 40px;">
                                 <script type="text/javascript">
                                     window.onload = ocr2('ocr2');
-                                </script>       
+                                </script> 
                             </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <img class="thmbDiv" />
+                            </td>                               
                         </tr>
                     </tbody>                  
-                </table>
+                </table> 
             </div>
         </div>
 

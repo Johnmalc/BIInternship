@@ -43,8 +43,8 @@ h1 {
 /* http://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
 .fourth {
     background-image: url('../img/elogv.png');
-    width: 220px;
-    height: 490px;
+    width: 250px;
+    height: 400px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
@@ -52,8 +52,8 @@ h1 {
 
 .third {
     background-image: url('../img/sdtotalv.png');
-    width: 220px;
-    height: 460px;
+    width: 250px;
+    height: 400px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
@@ -62,7 +62,7 @@ h1 {
 .second {
     background-image: url('../img/sdairv.png');
     width: 250px;
-    height: 430px;
+    height: 400px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;

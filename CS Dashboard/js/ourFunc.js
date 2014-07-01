@@ -1,3 +1,4 @@
+/*
 function ocr(id) {  
 
     function OCRImage(image){
@@ -29,7 +30,6 @@ function ocr(id) {
         var Actual = StringLastChars.replace(re, "8"); // must be otherwise doesn't recognize 8
         var numberToCompare = parseFloat(Actual.replace(',', '.')); // JS only accepts . not a comma !
         document.getElementById(id).innerHTML = Actual;
-        document.getElementById(id).style.color="red";
 
         var Budget = words.substring(1,5); // print first 3 number with ,
         var numberToCompareWith = parseFloat(Budget.replace(',', '.')); // JS only accepts . not a comma !
@@ -37,13 +37,15 @@ function ocr(id) {
         if (numberToCompare < numberToCompareWith) {         
             var thumbContainer = document.getElementsByClassName("thmbDiv");
             var thumbnail = document.createElement("img");
-            thumbContainer[0].appendChild(thumbnail);
+            thumbContainer[0].appendChild(thumbnail);        
+            document.getElementById(id).style.color="red";
             thumbnail.src = "support_img/tongue.png";
             thumbnail.style.height = "55px";
             thumbnail.style.width = "55px";
         } else {
             var thumbContainer = document.getElementsByClassName("thmbDiv");
             var thumbnail = document.createElement("img");
+            document.getElementById(id).style.color="green";
             thumbContainer[0].appendChild(thumbnail);
             thumbnail.src = "support_img/pizza.png";
             thumbnail.style.height = "55px";
@@ -55,7 +57,7 @@ function ocr(id) {
 
     return true;
 }
-
+*/
 function ocr2(id) {  
 
     function OCRImage(image){
@@ -78,10 +80,36 @@ function ocr2(id) {
     // http://stackoverflow.com/questions/5873810/how-can-i-get-last-characters-of-a-string-using-javascript
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     OCRPath("img/sdelogv.png", function(words){
+        //console.log(words);
+        var myString = words.replace(/[0-9]+(?!.*[0-9])/, ""); // first match string with a regex
+        var StringLastChars = myString.slice(-5); // we want just last, up-to 4 characters
+        var find = "&";
+        var re = new RegExp(find, "g");
+        var Actual = StringLastChars.replace(re, "8"); // must be otherwise doesn't recognize 8
+        var numberToCompare = parseFloat(Actual.replace(',', '.')); // JS only accepts . not a comma !
+
         var Budget = words.substring(1,5); // print first 3 number with ,
-        var numberToWith = parseFloat(Budget.replace(',', '.')); // JS only accepts . not a comma !
-        document.getElementById(id).innerHTML = Budget;
-        return console.log(Budget);
+        var numberToCompareWith = parseFloat(Budget.replace(',', '.')); // JS only accepts . not a comma !
+        document.getElementById(id).innerHTML = numberToCompareWith;
+
+        if (numberToCompare < numberToCompareWith) {         
+            var thumbContainer = document.getElementsByClassName("thmbDiv");
+            var thumbnail = document.createElement("img");
+            thumbContainer[0].appendChild(thumbnail);        
+            document.getElementById(id).style.color="red";
+            thumbnail.src = "support_img/tongue.png";
+            thumbnail.style.height = "55px";
+            thumbnail.style.width = "55px";
+        } else {
+            var thumbContainer = document.getElementsByClassName("thmbDiv");
+            var thumbnail = document.createElement("img");
+            document.getElementById(id).style.color="green";
+            thumbContainer[0].appendChild(thumbnail);
+            thumbnail.src = "support_img/pizza.png";
+            thumbnail.style.height = "55px";
+            thumbnail.style.width = "90px";
+        };
+
     });
 
     return true;
