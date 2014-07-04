@@ -94,7 +94,7 @@ h1 {
     height: 75px;
     background-color: #BAAE94;
     font-size: 30px;
-    color: blue;
+    /* color: blue; */
 }
 .yellow {
     background-color: rgb(255,179,0);
