@@ -13,7 +13,7 @@ In the "R Scripts" folder you can find **R-projects** which I wrote additionally
 
 - [Twitter's Bootstrap](http://getbootstrap.com/)
 - Adobe Illustrator for SVG images
-- [OCR](http://en.wikipedia.org/wiki/Optical_character_recognition) -> [Ocrad.js](http://antimatter15.com/ocrad.js/demo.html)
+- [OCR](http://en.wikipedia.org/wiki/Optical_character_recognition) -> [Ocrad.js](http://antimatter15.com/ocrad.js/demo.html). However, later migrated to CSV lists
 - Sublime Editor 3
 
 *R-Projects*
