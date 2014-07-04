@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta http-equiv="refresh" content="60">
+        <meta http-equiv="refresh" content="15">
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
@@ -25,7 +25,9 @@
         }).done(function(csvAsString){
             csvAsArray=csvAsString.csvToArray({ rSep:'|' }, {head:true});
             csvAsArray[0].toString();        
-            document.getElementById("output").innerHTML=csvAsArray[0];
+            $("#output").html(csvAsArray[0]);
+           //$("#output").class('red');
+
         });
     </script>
     
@@ -41,8 +43,8 @@
              
             <div class="row nahoru">    
                 <div class=" col-lg-8">
-                    <img src="img/sdrail_market_rev.jpg" height="360" alt="Generic thumbnail"> 
-                    <img src="img/sdair_market_rev.jpg" height="360" alt="Generic thumbnail"> 
+                    <img src="img/sdrail_market_rev.png" height="360" alt="Generic thumbnail"> 
+                    <img src="img/sdair_market_rev.png" height="360" alt="Generic thumbnail"> 
                 </div>
             </div>
 
@@ -80,7 +82,6 @@
 
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     </body>
