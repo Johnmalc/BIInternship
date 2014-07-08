@@ -71,8 +71,8 @@ function date_time(id) {
         //curMeridiem = objToday.getHours() > 12 ? "PM" : "AM";
     var today = curHour + ":" + curMinute + ":" + curSeconds + " " + dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " +curYear;
     // " " +  curMeridiem +
-    document.getElementById(id).innerHTML = today;
-    document.getElementById(id).style.color="black";
+    $(".time").html(today);
+    $(".time").css("color", "black");
     setTimeout('date_time("'+id+'");','1000');
     return true;
 }
