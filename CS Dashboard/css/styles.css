@@ -80,22 +80,16 @@ h1 {
 #footer {
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     /* Set the fixed height of the footer here */
     height: 75px;
     background-color: #BAAE94;
 }
 
-#levy {
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    /* Set the fixed height of the footer here */
-    height: 75px;
-    background-color: #BAAE94;
-    font-size: 30px;
-    /* color: blue; */
+#footer td {
+    font-size:33px;
 }
+
 .yellow {
     background-color: rgb(255,179,0);
 }

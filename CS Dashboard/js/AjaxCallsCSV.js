@@ -5,39 +5,47 @@ function doAJAXRevenue(url) {
         cache: false,
         }).done(function(csvAsString){
         csvAsArray=csvAsString.csvToArray({ rSep:'|' }, {head:false});
-        csvAsArray[0].toString();        
-        $(".revenue").html(csvAsArray[0]);
+        // http://api.jquery.com/data/
+        // Store our values because after refresh these may go missing (displayed as blank)
+        $("body").data("revenue", csvAsArray[0]);        
+        var StoredRevenue = $("body").data("revenue");
+        $(".revenue").html(StoredRevenue).css("color", "black");
     });
 }
+
 function doAJAXBudget(url) {
     $.ajax({
         url: url,
         dataType: 'text',
         cache: false,
-        }).done(function(csvAsString){
+        }).done(function(csvAsString){ 
         csvAsArray=csvAsString.csvToArray({ rSep:'|' }, {head:false});
-        csvAsArray[0].toString();        
-        $(".budget").html(csvAsArray[0]);
-        //$(".output").addClass('red');
+        // see above
+        $("body").data("budget", csvAsArray[0]);        
+        var StoredBudget = $("body").data("budget");
+        $(".budget").html(StoredBudget).css("color", "black");
     });
 }
+
 function doAJAXRevText(url) {
     $.ajax({
         url: url,
         dataType: 'text',
         cache: false,
         }).done(function(csvAsString){
-        csvAsArray=csvAsString.csvToArray({ rSep:'|' }, {head:false});
-        var revenue = csvAsArray[1].toString();        
-        console.log(revenue);   
-        if (revenue.contains("-")) {
-            var string = "To go: "   
-            $(".TextToDisplay").html(string);         
-            console.log("alert");
-        } else{
-            console.log("alert+");
-            var string = "Over: "
-            $(".TextToDisplay").html(string);
-        };
-    });
+            csvAsArray=csvAsString.csvToArray({ rSep:'|' }, {head:false});
+            var revenue = csvAsArray[1].toString();        
+            console.log(revenue);   
+            if (revenue.contains("-")) {
+                // text on the left side e.g. To Go vs. Over
+                var stringToGo = "To go: ";   
+                $(".TextToDisplay").html(stringToGo + " " + revenue).css("color", "black");
+                // add smiley
+                var thumbnail = $("#ocr2 .thmbDiv").height("55px").width("55px").attr('src', "support_img/tongue.png");
+            } else{
+                var stringOver = "Over: ";
+                $(".TextToDisplay").html(stringOver + " " + revenue).css("color", "black");                
+                var thumbnail = $("#ocr2 .thmbDiv").height("55px").width("90px").attr('src', "support_img/pizza.png");
+            }
+        });
 }

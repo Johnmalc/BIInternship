@@ -30,20 +30,17 @@ function ocr2(id) {
 
         var Budget = words.substring(1,5); // print first 3 number with ,
         var numberToCompareWith = parseFloat(Budget.replace(',', '.')); // JS only accepts . not a comma !
-        document.getElementById(id).innerHTML = numberToCompareWith;
 
         if (numberToCompare < numberToCompareWith) {         
             var thumbContainer = document.getElementsByClassName("thmbDiv");
             var thumbnail = document.createElement("img");
             thumbContainer[0].appendChild(thumbnail);                
-            //document.getElementById(id).style.color="red";
             thumbnail.src = "support_img/tongue.png";
             thumbnail.style.height = "55px";
             thumbnail.style.width = "55px";
         } else {
             var thumbContainer = document.getElementsByClassName("thmbDiv");
             var thumbnail = document.createElement("img");
-            //document.getElementById(id).style.color="green";
             thumbContainer[0].appendChild(thumbnail);
             thumbnail.src = "support_img/pizza.png";
             thumbnail.style.height = "55px";
