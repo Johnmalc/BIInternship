@@ -15,12 +15,11 @@
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/csv.js"></script>
         <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>
-        <script type="text/javascript" src="js/ourFunc.js"></script> 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" ></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <!--<script type="text/javascript" src="https://cdn.rawgit.com/antimatter15/ocrad.js/master/ocrad.js"></script>-->
+        <script type="text/javascript" src="https://cdn.rawgit.com/IonDen/ion.sound/master/js/ion.sound.min.js"></script>
     </head>
 
     <body>
@@ -28,10 +27,16 @@
             doAJAXRevenue('csv/RealTimeRevenueFooter.csv');
         </script>
         <script type="text/javascript"> 
-            doAJAXBudget('csv/RealTimeBudgetFooter.csv');
-        </script>   
-        <script type="text/javascript"> 
-            doAJAXRevText('csv/RealTimeRevenueFooter.csv');
+            playSound();
+        </script>
+        
+        <script type="text/javascript">
+            $.ionSound({
+                sounds: [
+                    "metal_plate"
+                ],
+                path: "sounds/"
+            });
         </script>  
 
         <div class="container-fluid">
@@ -93,7 +98,6 @@
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="ocr2">
                                     <img  class="thmbDiv" />
-                                    <!--<script type="text/javascript">window.onload = ocr2('ocr2');</script>-->
                                 </td>                                                          
                             </tr>
                         </tbody>                  

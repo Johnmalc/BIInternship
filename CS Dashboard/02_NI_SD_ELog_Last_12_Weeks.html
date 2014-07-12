@@ -5,13 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta http-equiv="refresh" content="15" >
+        <meta http-equiv="refresh" content="60">  <!-- 12 Hours refresh -->
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <script type="text/javascript" src="js/csv.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/ourFunc.js"></script>
         <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" ></script>
     </head>
@@ -20,13 +19,7 @@
         <script type="text/javascript"> 
             doAJAXRevenue('csv/RealTimeRevenueFooter.csv');
         </script>
-        <script type="text/javascript"> 
-            doAJAXBudget('csv/RealTimeBudgetFooter.csv');
-        </script> 
-        <script type="text/javascript"> 
-            doAJAXRevText('csv/RealTimeRevenueFooter.csv');
-        </script> 
-
+        
         <div class="container-fluid">
             <div class="row nahoru">
                 <div class="col-lg-5">
