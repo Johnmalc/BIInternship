@@ -8,28 +8,38 @@
         <title>CS Dashboard - Control panel</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
-        <script src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>
         <script type="text/javascript" src="js/underscore-min.js" ></script>
     </head>
 
-    <body>
+    <body >
 
         <script type="text/javascript">
-            $('.btn').button();
+            $(document).ready(function(){
+                $("#option1").on( "click", function() {
+                    $("body").first().css("background-color","white");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#option2").on( "click", function() {
+                    $("body").first().css("background-color","red");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#option3").on( "click", function() {
+                    $("body").first().css("background-color","blue");
+                });
+            });
         </script>
     
         <div class="container-fluid">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                    <input type="radio" name="options" id="option1" checked> Show dashboard
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option2"> Show RED (waiting qeueu)
-                </label>
-                <label class="btn btn-primary">
-                    <input type="radio" name="options" id="option3"> Show WHITE (nothing)
-                </label>
+            <div class="col-lg-6 col-lg-offset-5" style="padding-top:60px;">
+                <button type="button" class="btn btn-primary" id="option1">Primary</button>
+                <button type="button" class="btn btn-success" id="option2">Success</button>
+                <button type="button" class="btn btn-info" id="option3">Info</button>
             </div>
         </div>
 
