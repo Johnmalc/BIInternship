@@ -5,35 +5,38 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta http-equiv="refresh" content="60"> <!-- 12 Hours refresh -->
         <title>CS Dashboard</title>
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/csv.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>        
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" ></script>
+        <script type="text/javascript" src="js/underscore-min.js" ></script>
     </head>
 
     <body>
-        <script type="text/javascript"> 
+        <script type="text/javascript">
+            setTimeout(function () { 
+                location.reload(true); 
+            }, 60000);
             doAJAXRevenue('csv/RealTimeRevenueFooter.csv');
-        </script>
-            
+        </script> 
+
         <div class="container-fluid">
             <div class="row nahoru">
                 <div class="col-lg-5">
                     <img src="support_img/logo.jpg" width="450" height="80">
                 </div>
                 <div class="col-lg-7">
-                    <h1>WKLY Sameday Market Rev. in EUR</h1>
+                    <h1>WKLY Sameday Market Rev. in TEUR</h1>
                 </div>
             </div>
              
             <div class="row nahoru">    
                 <div class=" col-lg-8">
-                    <img src="img/sdrail_market_rev.jpg" height="360" alt="Generic thumbnail"> 
-                    <img src="img/sdair_market_rev.jpg" height="360" alt="Generic thumbnail"> 
+                    <img src="img/sdrail_market_rev.png" height="360" width="1300"> 
+                    <img src="img/sdair_market_rev.png" height="360" width="1300"> 
                 </div>
             </div>
 
@@ -42,21 +45,16 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>
-                                    <h1 class="time" style="font-size:33px;"> <!-- Wednesday fail - the longest word -->
-                                        <script type="text/javascript">date_time('date_time')</script>  
-                                    </h1>
+                                <td class="time" style="font-size:33px;">
+                                    <script type="text/javascript">date_time('date_time')</script> 
                                 </td>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td style="padding-right:155px"></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>&nbsp;&nbsp;&nbsp;</td>
                                 <td class="TextToDisplay"></td>
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>(</td>
+                                <td>&nbsp;</td>
                                 <td class="revenue"></td>
-                                <td>/</td>
                                 <td class="budget"></td>
-                                <td>)</td>
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="ocr2">
                                     <img class="thmbDiv" />
@@ -68,8 +66,6 @@
             </div>
 
         </div>
-
-        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     </body>
 </html>

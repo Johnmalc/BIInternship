@@ -5,27 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta http-equiv="refresh" content="60">  <!-- 12 Hours refresh -->
         <title>CS Dashboard</title>
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <script type="text/javascript" src="js/csv.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" ></script>
+        <script type="text/javascript" src="js/underscore-min.js" ></script>
     </head>
 
     <body>
-        <script type="text/javascript"> 
+        <script type="text/javascript">
+            setTimeout(function () { 
+                location.reload(true); 
+            }, 60000);   
             doAJAXRevenue('csv/RealTimeRevenueFooter.csv');
         </script>
-        
+
         <div class="container-fluid">
             <div class="row nahoru">
-                <div class="col-lg-5">
+                 <!--<div class="col-lg-5">
                     <img src="support_img/logo.jpg" width="450" height="80">
-                </div>
-                <div class="col-lg-7">
+                </div>-->
+                <div class="col-lg-12">
                     <h1>Last 12 Weeks Revenue in TEUR</h1>
                 </div>
             </div>
@@ -34,21 +37,21 @@
                 <div class="col-lg-3">
                     <img src="img/sdrail.png" alt="Generic thumbnail">
                 </div>
-                <div class="col-lg-3 ">
+                <div class="col-lg-3">
                     <img src="img/sdair.png" alt="Generic thumbnail">
                 </div>
-                <div class="col-lg-3   ">
+                <div class="col-lg-3">
                     <img src="img/sdtotal.png" alt="Generic thumbnail">
                 </div>
-                <div class="col-lg-3   ">
+                <div class="col-lg-3">
                     <img src="img/elog.png" alt="Generic thumbnail">
                 </div>
                 
             </div>
 
-            <div class="row" style="padding-top:130px;" >
-                <div class="col-lg-3 col-lg-offset-5">
-                    <img src="support_img/sv2.png" width="288" height="288" alt="Generic thumbnail">
+            <div class="row" style="padding-top:100px; " >
+                <div class="col-lg-3 col-lg-offset-5"> <!--background-color:red; Farbe graue -->
+                    <img src="support_img/sv2.png" width="310" height="340" alt="Generic thumbnail">
                 </div>
             </div>
             
@@ -57,25 +60,19 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>
-                                    <h1 class="time" style="font-size:33px;"> <!-- Wednesday fail - the longest word -->
-                                        <script type="text/javascript">date_time('date_time')</script>  
-                                    </h1>
+                                <td class="time" style="font-size:33px;">
+                                    <script type="text/javascript">date_time('date_time')</script> 
                                 </td>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td style="padding-right:155px"></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>&nbsp;&nbsp;&nbsp;</td>
                                 <td class="TextToDisplay"></td>
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                <td>(</td>
+                                <td>&nbsp;</td>
                                 <td class="revenue"></td>
-                                <td>/</td>
                                 <td class="budget"></td>
-                                <td>)</td>
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="ocr2">
-                                    <img  class="thmbDiv" />
-                                    <!--<script type="text/javascript">window.onload = ocr2('ocr2');</script>-->
+                                    <img class="thmbDiv" />
                                 </td>                                                          
                             </tr>
                         </tbody>                  
@@ -83,8 +80,6 @@
                 </footer>
             </div>
         </div>
-
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     </body>
 </html>

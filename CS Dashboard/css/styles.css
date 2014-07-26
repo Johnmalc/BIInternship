@@ -14,7 +14,7 @@ h1 {
 }
 
 .nahoru {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .padding {
@@ -43,26 +43,26 @@ h1 {
 /* http://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
 .fourth {
     background-image: url('../img/elogv.png');
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
 }
-
+/*
 .third {
     background-image: url('../img/sdtotalv.png');
     width: 250px;
     height: 400px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
-    background-size: cover;
-}
+/*    background-size: cover;
+}*/
 
 .second {
     background-image: url('../img/sdairv.png');
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
@@ -70,8 +70,8 @@ h1 {
 
 .first {
     background-image: url('../img/sdrailv.png');
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
@@ -80,14 +80,19 @@ h1 {
 #footer {
     position: absolute;
     bottom: 0;
+    padding-top: 20px;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 75px;
+    height: 100px;
     background-color: #BAAE94;
 }
 
 #footer td {
     font-size:33px;
+}
+
+#footer div {
+    padding-top: 20px;
 }
 
 .yellow {

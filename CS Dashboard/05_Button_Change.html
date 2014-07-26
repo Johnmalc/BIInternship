@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Control Panel">
+        <title>CS Dashboard - Control panel</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js" ></script>
+    </head>
+
+    <body>
+
+        <script type="text/javascript">
+            $('.btn').button();
+        </script>
+    
+        <div class="container-fluid">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" checked> Show dashboard
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2"> Show RED (waiting qeueu)
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option3"> Show WHITE (nothing)
+                </label>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>
