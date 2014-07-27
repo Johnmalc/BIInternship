@@ -113,3 +113,9 @@ h1 {
 .DC9A4D {
     background-color: #DC9A4D;
 }
+/* http://css-tricks.com/using-css-for-image-borders/ */
+.obdelnik img {
+    padding:1px;
+    border:5px solid #DC9A4D;
+    background-color: #DC9A4D;
+}

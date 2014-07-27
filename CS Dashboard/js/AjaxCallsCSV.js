@@ -9,23 +9,23 @@ function doAJAXRevenue(url) {
         // Store our values because after refresh these may go missing (displayed as blank)
         $("body").data("revenue", csvAsArray[0]);        
         var StoredRevenue = $("body").data("revenue");
-        $(".revenue").html("(Current: " + StoredRevenue + " /").css("color", "black");
+        $(".revenue").html("Current: " + StoredRevenue + " of").css("color", "black");
 
         $("body").data("budget", csvAsArray[2]);        
         var StoredBudget = $("body").data("budget");
-        $(".budget").html(" &nbsp;" + StoredBudget + ")").css("color", "black");
+        $(".budget").html(" &nbsp;" + StoredBudget + "Budget ").css("color", "black");
 
         var changingVar = csvAsArray[1].toString();        
         if (changingVar.contains("-")) {
             // text on the left side e.g. To Go vs. Over
             var stringToGo = "To go: ";   
-            $(".TextToDisplay").html(stringToGo + " " + changingVar).css("color", "black");
+            $(".TextToDisplay").html(stringToGo + " " + changingVar).css("color", "red");
             // add smiley
-            var thumbnail = $("#ocr2 .thmbDiv").height("55px").width("55px").attr('src', "support_img/tongue.png");
+            //var thumbnail = $("#ocr2 .thmbDiv").height("55px").width("55px").attr('src', "support_img/tongue.png");
         } else{
             var stringOver = "Over: ";
-            $(".TextToDisplay").html(stringOver + " " + changingVar).css("color", "black");                
-            var thumbnail = $("#ocr2 .thmbDiv").height("55px").attr('src', "support_img/pizza.png");
+            $(".TextToDisplay").html(stringOver + " " + changingVar).css("color", "green");                
+            //var thumbnail = $("#ocr2 .thmbDiv").height("55px").attr('src', "support_img/pizza.png");
         }
     });
 }
