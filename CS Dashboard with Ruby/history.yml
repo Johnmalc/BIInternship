@@ -1,28 +1,49 @@
 ---
 buzzwords: |+
-  data: {"items":[{"label":"Pivoting","value":20},{"label":"Streamlininess","value":20},{"label":"Exit strategy","value":16},{"label":"Paradigm shift","value":18},{"label":"Web 2.0","value":19},{"label":"Synergy","value":15},{"label":"Turn-key","value":16},{"label":"Leverage","value":19},{"label":"Enterprise","value":13}],"id":"buzzwords","updatedAt":1406391006}
+  data: {"items":[{"label":"Exit strategy","value":10},{"label":"Paradigm shift","value":17},{"label":"Streamlininess","value":18},{"label":"Web 2.0","value":16},{"label":"Enterprise","value":20},{"label":"Synergy","value":10},{"label":"Leverage","value":16},{"label":"Turn-key","value":21},{"label":"Pivoting","value":14}],"id":"buzzwords","updatedAt":1406451827}
 
 valuation: |+
-  data: {"current":1,"last":19,"id":"valuation","updatedAt":1406391006}
+  data: {"current":11,"last":27,"id":"valuation","updatedAt":1406451827}
 
 karma: |+
-  data: {"current":176250,"last":108764,"id":"karma","updatedAt":1406391006}
+  data: {"current":129452,"last":41190,"id":"karma","updatedAt":1406451827}
 
 synergy: |+
-  data: {"value":54,"id":"synergy","updatedAt":1406391006}
+  data: {"value":59,"id":"synergy","updatedAt":1406451827}
 
 convergence: |+
-  data: {"points":[{"x":156,"y":32},{"x":157,"y":1},{"x":158,"y":41},{"x":159,"y":26},{"x":160,"y":21},{"x":161,"y":39},{"x":162,"y":40},{"x":163,"y":26},{"x":164,"y":4},{"x":165,"y":1}],"id":"convergence","updatedAt":1406391005}
+  data: {"points":[{"x":142,"y":14},{"x":143,"y":7},{"x":144,"y":16},{"x":145,"y":12},{"x":146,"y":27},{"x":147,"y":21},{"x":148,"y":39},{"x":149,"y":34},{"x":150,"y":21},{"x":151,"y":22}],"id":"convergence","updatedAt":1406451827}
 
 torvalds/linux: |+
-  data: {"repo":"torvalds/linux","issues":3,"pulls":47,"forks":5879,"watchers":2521,"stargazers":14766,"activity":"About 1 hour","id":"torvalds/linux","updatedAt":1406391001}
+  data: {"repo":"torvalds/linux","issues":3,"pulls":47,"forks":5877,"watchers":2520,"stargazers":14779,"activity":"33 minutes","id":"torvalds/linux","updatedAt":1406451789}
 
 git_next_milesone: |+
-  data: {"text":"None","moreinfo":"","id":"git_next_milesone","updatedAt":1406388463}
+  data: {"text":"None","moreinfo":"","id":"git_next_milesone","updatedAt":1406451544}
 
-twitter_mentions: "data: {\"comments\":[{\"name\":\"Whitley L\",\"body\":\"http://t.co/cn24j8UffH
-  PREPPING ON A BUDGET the frugal survival guide when time matters the most!\\n\\nPREPPING
-  ON ... http://t.co/llLGRppivP\",\"avatar\":\"https://pbs.twimg.com/profile_images/480254156096032770/aFEgrkhb_normal.jpeg\"},{\"name\":\"Sukhvir
+twitter_mentions: "data: {\"comments\":[{\"name\":\"kiera curran\",\"body\":\"@stuh72
+  I ran London in 2013- it was #firstlove for marathon running, no my dad has made
+  it clear that it's a race and time matters!\",\"avatar\":\"https://pbs.twimg.com/profile_images/490390031509766144/nd3SA3fT_normal.jpeg\"},{\"name\":\"Stefanie\",\"body\":\"Learned
+  a lot from my friend but tonight the lesson that sticks out is that where we invest
+  our precious time matters. Miss you, buddy. ❤️\",\"avatar\":\"https://pbs.twimg.com/profile_images/489870509346410496/NcPTOGS5_normal.jpeg\"},{\"name\":\"Ha,
+  you knew!\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/485621899050094592/Rj1UrPlX_normal.jpeg\"},{\"name\":\"Blessing
+  Kntn\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/490266703276675072/tWJucB2E_normal.jpeg\"},{\"name\":\"Nita\",\"body\":\"RT
+  @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/487006452515500032/SkArE58t_normal.jpeg\"},{\"name\":\"tah\",\"body\":\"RT
+  @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/493118252554678272/SamoVKJN_normal.jpeg\"},{\"name\":\"YasmineTylise\",\"body\":\"RT
+  @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/486971896626282496/va6JELsm_normal.jpeg\"},{\"name\":\"Tinkk
+  Babyyy \",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/491051800720834560/dVbAHHoI_normal.jpeg\"},{\"name\":\"
+  Italianne \",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/490622748172234753/FLU82zv1_normal.jpeg\"},{\"name\":\"Alexis
+  Swearingen\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/485514622330343426/n5FEuQiu_normal.jpeg\"},{\"name\":\"Zach
+  Dawson\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/466705882525728769/rPCvwCLg_normal.jpeg\"},{\"name\":\"dαииииι
+  ღ\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/493255260983398400/dGGO-BMU_normal.jpeg\"},{\"name\":\"✨Ava
+  & Ari's Mommy✨\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/485411456200871936/9DM0F3ZJ_normal.jpeg\"},{\"name\":\"Marshondra
+  Trimm\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/488872391896862720/7nA7o4F3_normal.jpeg\"},{\"name\":\"Sig
+  H.B\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/452183205378928640/L1w2hTwr_normal.jpeg\"},{\"name\":\"Blade
+  Brown\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/490548714168389632/SbtiER_8_normal.jpeg\"},{\"name\":\"Alexis
+  Thore\",\"body\":\"RT @DJBlackGhost: I can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/473251212163575808/ft39JFlH_normal.jpeg\"},{\"name\":\"Ghost\",\"body\":\"I
+  can't wait on people, my time matters.\",\"avatar\":\"https://pbs.twimg.com/profile_images/492367515230949376/wD_TiyTH_normal.jpeg\"},{\"name\":\"Neighborhood
+  Church\",\"body\":\"Create a rhythm with your kids. http://t.co/wBTs7LdnjU\",\"avatar\":\"https://pbs.twimg.com/profile_images/2483352740/so1my927px2899es9cxu_normal.jpeg\"},{\"name\":\"Whitley
+  L\",\"body\":\"http://t.co/cn24j8UffH PREPPING ON A BUDGET the frugal survival guide
+  when time matters the most!\\n\\nPREPPING ON ... http://t.co/llLGRppivP\",\"avatar\":\"https://pbs.twimg.com/profile_images/480254156096032770/aFEgrkhb_normal.jpeg\"},{\"name\":\"Sukhvir
   \ Garcha\",\"body\":\"When flood comes, fish eat ants &amp; when flood recedes,
   ants eat fish. Only time matters. Just hold on, God gives opportunity to everyone!\",\"avatar\":\"https://pbs.twimg.com/profile_images/491522534425112576/xaEwAFCz_normal.jpeg\"},{\"name\":\"Whitley
   L\",\"body\":\"http://t.co/cn24j8UffH PREPPING ON A BUDGET the frugal survival guide
@@ -42,7 +63,7 @@ twitter_mentions: "data: {\"comments\":[{\"name\":\"Whitley L\",\"body\":\"http:
   Sher \",\"body\":\"@ThaisSher @ratterwill want to waste Time matters first + foremost--
   Professionalism comes first in the Ent. Ind-- it is an Industry!\",\"avatar\":\"https://pbs.twimg.com/profile_images/378800000376923278/f42cf425b54c1c49fd2c348be164c29d_normal.jpeg\"},{\"name\":\"Michelle
   Emmy Akins \",\"body\":\"weird -----&gt; \\\"Is it bad to apply for jobs on a Friday?\\\"
-  #Recruiter \\\"As a recruiter, the anwer is yes, the day and time matters.\\\" smh\",\"avatar\":\"https://pbs.twimg.com/profile_images/483681251367583744/_oJTAjbG_normal.jpeg\"},{\"name\":\"Blair\",\"body\":\"@lbstewart
+  #Recruiter \\\"As a recruiter, the anwer is yes, the day and time matters.\\\" smh\",\"avatar\":\"https://pbs.twimg.com/profile_images/493213788745658368/QMVsruJi_normal.jpeg\"},{\"name\":\"Blair\",\"body\":\"@lbstewart
   @morgancarrie @kapost @LizKONeill Great perspective here. Why the time matters.
   Kudos.\",\"avatar\":\"https://pbs.twimg.com/profile_images/484742303769448448/9ruyeLsg_normal.jpeg\"},{\"name\":\"Media
   Connections\",\"body\":\"Kerryn Powell , Founder and Connector , Your Time Matters
@@ -133,9 +154,9 @@ twitter_mentions: "data: {\"comments\":[{\"name\":\"Whitley L\",\"body\":\"http:
   front of the television? http://t.co/nv6vZY5y4b\",\"avatar\":\"https://pbs.twimg.com/profile_images/459055456632049664/Vj50Az4s_normal.jpeg\"},{\"name\":\"PATRICK
   LANE & CO\",\"body\":\"Time matters...... http://t.co/AZwm8jg7GE\",\"avatar\":\"https://pbs.twimg.com/profile_images/1260924303/Patrick-Lane-Avatar_normal.jpg\"},{\"name\":\"Sarah
   Miller\",\"body\":\"RT @WALLST_KINGWOLF: $NHPI It's all about time matters....copper
-  land guaranteed imo   $NHPI http://t.co/nplmnN9Q89\",\"avatar\":\"https://pbs.twimg.com/profile_images/490871184825651200/ciOFcvsH_normal.jpeg\"},{\"name\":\"Carl\",\"body\":\"@_LucasAIDs_
-  @United99_ @YouFuckingTit yeah time matters doesn't it because Hillsborough was
-  last week? Sorry i forgot\",\"avatar\":\"https://pbs.twimg.com/profile_images/493057791779942400/q0POfFm-_normal.jpeg\"},{\"name\":\"arvato
+  land guaranteed imo   $NHPI http://t.co/nplmnN9Q89\",\"avatar\":\"https://pbs.twimg.com/profile_images/490871184825651200/ciOFcvsH_normal.jpeg\"},{\"name\":\"The
+  Road End\",\"body\":\"@_LucasAIDs_ @United99_ @YouFuckingTit yeah time matters doesn't
+  it because Hillsborough was last week? Sorry i forgot\",\"avatar\":\"https://pbs.twimg.com/profile_images/493233556240728064/U46RjE4l_normal.png\"},{\"name\":\"arvato
   Systems\",\"body\":\"Commercial Partnership of #arvatoSystems with #mpass &amp;
   @time_matters for #SameDayDelivery http://t.co/uPww32Gm9t\",\"avatar\":\"https://pbs.twimg.com/profile_images/463257469926400000/SiMtDLMq_normal.png\"},{\"name\":\"arvato
   Systems\",\"body\":\"#arvatoSystems veröffentlicht mit Partnern #mpass &amp; @time_matters
@@ -193,7 +214,7 @@ twitter_mentions: "data: {\"comments\":[{\"name\":\"Whitley L\",\"body\":\"http:
   Eimaduddin♛\",\"body\":\"What is the most important time?\\n\\nNow, no other time
   matters.\\n\\nWho is the most important person?\\n\\nThe one you are... http://t.co/eqCIGqagi6\",\"avatar\":\"https://pbs.twimg.com/profile_images/1313214502/3_legends_normal.jpg\"},{\"name\":\"Mamokgethi
   Molopyane\",\"body\":\"@CollinsMandy disrespectful much!! my time matters so so
-  so much!\",\"avatar\":\"https://pbs.twimg.com/profile_images/491223635815059458/LJNnZ_-n_normal.jpeg\"},{\"name\":\"AhmetHan\",\"body\":\"RT
+  so much!\",\"avatar\":\"https://pbs.twimg.com/profile_images/493276883841462272/8UWtJxIt_normal.jpeg\"},{\"name\":\"AhmetHan\",\"body\":\"RT
   @csiliconvalley: Working late because time matters! #csv14 #SiliconValley http://t.co/HUEAsis9KT\",\"avatar\":\"https://pbs.twimg.com/profile_images/455039003289321472/Dx7RHlXL_normal.jpeg\"},{\"name\":\"Tech
   for CEOs\",\"body\":\"Short Video: Why Time Matters When You Are Engaging an Audience
   by @JobyBlume  http://t.co/tMpPoReB3j  #leadership http://t.co/okEwRjidll\",\"avatar\":\"https://pbs.twimg.com/profile_images/2366955424/x2zrhdd2im0wgxi8rv92_normal.jpeg\"},{\"name\":\"Webiners\",\"body\":\"Short
@@ -327,30 +348,9 @@ twitter_mentions: "data: {\"comments\":[{\"name\":\"Whitley L\",\"body\":\"http:
   Esguerra\",\"body\":\"Yet again TIME matters.. http://t.co/ZMmxLJgISh\",\"avatar\":\"https://pbs.twimg.com/profile_images/415249183772123136/BOpb8tS8_normal.jpeg\"},{\"name\":\"ÄËÑÖS
   #FreePalestine\",\"body\":\"My word is actually meaningless when the time.matters....\",\"avatar\":\"https://pbs.twimg.com/profile_images/491350498855751680/kvYHIL_H_normal.jpeg\"},{\"name\":\"The
   Hippo Says\",\"body\":\"@natapoc_ebooks Time matters to a bot? I can't imagine you
-  sleep unless you sleep around. A little loose around the parameters, me thinks.\",\"avatar\":\"https://pbs.twimg.com/profile_images/489187790593093633/-oB9Odb0_normal.jpeg\"},{\"name\":\"Freedom
-  within words\",\"body\":\"RT @Toooomford: At this age for me, a good connection
-  matters. Me actually liking you matters. I can't just share my energy with anybody.
-  M…\",\"avatar\":\"https://pbs.twimg.com/profile_images/432294738616934401/qg2n4HFE_normal.jpeg\"},{\"name\":\"DBA.✌️\",\"body\":\"RT
-  @Toooomford: At this age for me, a good connection matters. Me actually liking you
-  matters. I can't just share my energy with anybody. M…\",\"avatar\":\"https://pbs.twimg.com/profile_images/483577815640846336/cZKxI0HU_normal.jpeg\"},{\"name\":\"Igwe
-  Tupac\",\"body\":\"RT @Toooomford: At this age for me, a good connection matters.
-  Me actually liking you matters. I can't just share my energy with anybody. M…\",\"avatar\":\"https://pbs.twimg.com/profile_images/492744221833437184/6RKzu90z_normal.jpeg\"},{\"name\":\"Sensei\",\"body\":\"RT
-  @Toooomford: At this age for me, a good connection matters. Me actually liking you
-  matters. I can't just share my energy with anybody. M…\",\"avatar\":\"https://pbs.twimg.com/profile_images/485459586275885056/hQFn-Z_h_normal.jpeg\"},{\"name\":\"\",\"body\":\"At
-  this age for me, a good connection matters. Me actually liking you matters. I can't
-  just share my energy with anybody. My time matters\",\"avatar\":\"https://pbs.twimg.com/profile_images/490801045170556928/RsuunCdt_normal.jpeg\"},{\"name\":\"I.Stavrakantonakis\",\"body\":\"Getting
-  the right alerts the right time matters the most! Enjoy using @IFTTT so much!\",\"avatar\":\"https://pbs.twimg.com/profile_images/419235385407860736/r1IKOgWU_normal.jpeg\"},{\"name\":\"Jessica
-  Holland\",\"body\":\"Family time matters http://t.co/IjRQAP9ndp\",\"avatar\":\"https://pbs.twimg.com/profile_images/467288000053772290/PMD_-e5p_normal.jpeg\"},{\"name\":\"Fred
-  De Guy\",\"body\":\"Time matters\",\"avatar\":\"https://pbs.twimg.com/profile_images/491205318052167681/xc9MKSeT_normal.jpeg\"},{\"name\":\"Leineal
-  Howard\",\"body\":\"RT @yusufyuie: TIME is my foundation. Where i put my time matters
-  to me. If i am spending most of my time with you, do not ruin it with exp…\",\"avatar\":\"https://pbs.twimg.com/profile_images/486173021196263425/iLeuOxFN_normal.jpeg\"},{\"name\":\"Nahpets\",\"body\":\"MicroStrategy,
-  Time:matters, Onlinezone. - http://t.co/IDrR2RaXyG\",\"avatar\":\"https://pbs.twimg.com/profile_images/474224610787876864/V-IGtQDh_normal.jpeg\"},{\"name\":\"Wade
-  Nichols\",\"body\":\"@Buster_ESPN I would guess they'd look at bringing him up May
-  2015 due to service time matters\",\"avatar\":\"https://pbs.twimg.com/profile_images/1238926783/wnsp_normal.jpg\"},{\"name\":\"Kathleen
-  Ahearn\",\"body\":\"Time Matters: Make your Social Media Channels Count Whatever
-  the Hour or Territory. http://t.co/Zo4MDIzfGZ #TheSocialInfluencer\",\"avatar\":\"https://pbs.twimg.com/profile_images/485717968353890304/NKSdVkpm_normal.jpeg\"}],\"id\":\"twitter_mentions\",\"updatedAt\":1406390699}\n\n"
+  sleep unless you sleep around. A little loose around the parameters, me thinks.\",\"avatar\":\"https://pbs.twimg.com/profile_images/489187790593093633/-oB9Odb0_normal.jpeg\"}],\"id\":\"twitter_mentions\",\"updatedAt\":1406451547}\n\n"
 klimato: |+
-  data: {"location":"Neu-Isenburg","temperature":"24","code":"28","format":"c","id":"klimato","updatedAt":1406390695}
+  data: {"location":"Neu-Isenburg","temperature":"24","code":"30","format":"c","id":"klimato","updatedAt":1406451544}
 
 github_milestone_some_project: |+
   data: {"milestone":"None","time":"","moreinfo":"","id":"github_milestone_some_project","updatedAt":1406390695}
