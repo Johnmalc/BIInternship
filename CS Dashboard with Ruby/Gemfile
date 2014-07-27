@@ -4,6 +4,7 @@ gem 'dashing'
 gem 'rest-client'
 gem 'octokit'
 gem 'json'
-gem 'actionview' 
+gem 'actionview'
+gem "koala" 
 ## Remove this if you don't need a twitter widget.
 gem 'twitter', '>= 5.9.0'

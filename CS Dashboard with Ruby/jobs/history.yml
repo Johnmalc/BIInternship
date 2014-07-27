@@ -1,0 +1,77 @@
+---
+buzzwords: |+
+  data: {"items":[{"label":"Paradigm shift","value":5},{"label":"Enterprise","value":7},{"label":"Turn-key","value":1},{"label":"Web 2.0","value":5},{"label":"Synergy","value":1},{"label":"Leverage","value":3},{"label":"Pivoting","value":3},{"label":"Streamlininess","value":2},{"label":"Exit strategy","value":1}],"id":"buzzwords","updatedAt":1406466429}
+
+klimato: |+
+  data: {"location":"Neu-Isenburg","temperature":"28","code":"34","format":"c","id":"klimato","updatedAt":1406466375}
+
+twitter_mentions: "data: {\"comments\":[{\"name\":\"Kristen Moran\",\"body\":\"Pops
+  #steelcitypops #summersinthesouth #drippinggoodness #timematters http://t.co/Qt7zc7OAGl\",\"avatar\":\"https://pbs.twimg.com/profile_images/1581054734/image_normal.jpg\"},{\"name\":\"24me\",\"body\":\"\\\"3
+  Ways To Boost Happiness That Actually Work\\\" by Eric Barker @businessinsider \\n24me
+  - Because #TimeMatters http://t.co/ayXkGofLIE\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"Darlene
+  Traffanstedt\",\"body\":\"Treetop with the middle one...#timematters #hesfinallytallenoughtodrivethegocarts
+  @ Tree Top http://t.co/WRa1SqQbf7\",\"avatar\":\"https://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png\"},{\"name\":\"24me\",\"body\":\"\\\"If
+  you want to live a happy life, tie it to a goal. Now to people or things\\\" @EinsteinBOT\\n24me-Because
+  #TimeMatters http://t.co/rhy7IcYrrA\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"Liat
+  Mordechay\",\"body\":\"RT @my24me: \\\"Be happy with what you have and are, be generous
+  with both, and you won't have to hunt for happiness.\\\" -William E. Gladstone\\n#…\",\"avatar\":\"https://pbs.twimg.com/profile_images/443019156200640512/86mHu5sE_normal.jpeg\"},{\"name\":\"FCCDC\",\"body\":\"Your
+  kids will only be this age once. How have you been present today? #TimeMatters #KidZone\",\"avatar\":\"https://pbs.twimg.com/profile_images/2992333769/71fd4b5acc9b9606f0aae22ea433ad33_normal.jpeg\"},{\"name\":\"24me\",\"body\":\"\\\"Be
+  happy with what you have and are, be generous with both, and you won't have to hunt
+  for happiness.\\\" -William E. Gladstone\\n#TimeMatters\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"Darlene
+  Traffanstedt\",\"body\":\"Luke Bryan with the oldest....#timematters http://t.co/ja81XXd68S\",\"avatar\":\"https://abs.twimg.com/sticky/default_profile_images/default_profile_1_normal.png\"},{\"name\":\"24me\",\"body\":\"\\\"How
+  To Achieve The 'Right' Amount Of Stress\\\" by @kevloria via @businessinsider\\n24me
+  - Because #TimeMatters http://t.co/kAAKRa8tMO\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"24me\",\"body\":\"“Optimism
+  is a happiness magnet.\\\" \\n24me - Because #TimeMatters #optimism #happiness http://t.co/fHlL3YmKOc\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"Duane
+  Montague\",\"body\":\"DADS: Creating time with your kids can lead to great things.
+  It lead Walt Disney to create #Disneyland. #timematters #DadLifeRules\",\"avatar\":\"https://pbs.twimg.com/profile_images/2492315899/image_normal.jpg\"},{\"name\":\"most_hated_#22\",\"body\":\"Take
+  chances and don't waste life #timematters\",\"avatar\":\"https://pbs.twimg.com/profile_images/486848163270389760/j159t59K_normal.jpeg\"},{\"name\":\"24me\",\"body\":\"\\\"5
+  Steps To Finally Achieving Work-Life Balance\\\" by @bakadesuyo via @businessinsider
+  \\n24me-Because #TimeMatters http://t.co/oc6PdVY3Cb\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"Emily
+  Nichles\",\"body\":\"RT @Christianichles: Here's the podcast from #LYM week 2 #TimeMatters
+  http://t.co/8deR2qt6tS\",\"avatar\":\"https://pbs.twimg.com/profile_images/1562539460/image_normal.jpg\"},{\"name\":\"Kerry
+  Bloodworth\",\"body\":\"RT @kschwartzcenter: \\\"There is no more wasteful entity
+  in medicine than a rushed doctor.\\\" Or a less compassionate one. #timematters
+  http://…\",\"avatar\":\"https://pbs.twimg.com/profile_images/486052331747024896/kv9N0RHL_normal.jpeg\"},{\"name\":\"Christian
+  Nichles\",\"body\":\"Here's the podcast from #LYM week 2 #TimeMatters http://t.co/8deR2qt6tS\",\"avatar\":\"https://pbs.twimg.com/profile_images/419674403899584512/ha6ja5bB_normal.jpeg\"},{\"name\":\"The
+  Schwartz Center \",\"body\":\"\\\"There is no more wasteful entity in medicine than
+  a rushed doctor.\\\" Or a less compassionate one. #timematters http://t.co/4zGYFhs4Ew\",\"avatar\":\"https://pbs.twimg.com/profile_images/2931641002/6257b7bffeda7b5b5979507fa3f0a434_normal.jpeg\"},{\"name\":\"Christian
+  Nichles\",\"body\":\"Behold, children are a heritage from the Lord, the fruit of
+  the womb a reward. #TimeMatters http://t.co/L74X7G5Qgx\",\"avatar\":\"https://pbs.twimg.com/profile_images/419674403899584512/ha6ja5bB_normal.jpeg\"},{\"name\":\"Liat
+  Mordechay\",\"body\":\"RT @my24me: Put Yourself on the Road to Success With These
+  5 Principles by @thebizguy @entrepreneur 24me #TimeMatters http://t.co/QlPX0plZPf\",\"avatar\":\"https://pbs.twimg.com/profile_images/443019156200640512/86mHu5sE_normal.jpeg\"},{\"name\":\"Liat
+  Mordechay\",\"body\":\"RT @my24me: \\\"7 Science-Backed Methods For Feeling Less
+  Busy\\\" by @bakadesuyo @businessinsider\\n24me #TimeMatters http://t.co/ZZkYR8GnvK\",\"avatar\":\"https://pbs.twimg.com/profile_images/443019156200640512/86mHu5sE_normal.jpeg\"},{\"name\":\"24me\",\"body\":\"\\\"7
+  Science-Backed Methods For Feeling Less Busy\\\" by Eric Barker via @businessinsider\\n24me
+  - Because #TimeMatters http://t.co/gc31G3EsPT\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"himanshu
+  srivastava\",\"body\":\"Same people starting praising ishant sharma , who were declare
+  war against him for 30 run in over.\\n#TimeMatters o_O O_o \U0001F64F\",\"avatar\":\"https://pbs.twimg.com/profile_images/378800000507067809/7f2b67164926d3ba89287472eb2cc471_normal.jpeg\"},{\"name\":\"himanshu
+  srivastava\",\"body\":\"Same people starting praising #ishantsharma , who were declare
+  war against him for 30 run in over.\\n#TimeMatters o_O O_o \U0001F64F\",\"avatar\":\"https://pbs.twimg.com/profile_images/378800000507067809/7f2b67164926d3ba89287472eb2cc471_normal.jpeg\"},{\"name\":\"kidVENTURE
+  Island\",\"body\":\"RT @sonjawaltman: Love how our students serve each week @lcbckvi.
+  #timematters #leadsmall http://t.co/nBEISMTsG2\",\"avatar\":\"https://pbs.twimg.com/profile_images/3760189046/dbd1663bba521f4c7f1e135cdb115300_normal.jpeg\"},{\"name\":\"Christian
+  Nichles\",\"body\":\"It is over time that a child is spiritually formed not solitary
+  moments.  #TimeMatters #LYM\",\"avatar\":\"https://pbs.twimg.com/profile_images/419674403899584512/ha6ja5bB_normal.jpeg\"},{\"name\":\"Sonja
+  Waltman\",\"body\":\"Love how our students serve each week @lcbckvi. #timematters
+  #leadsmall http://t.co/nBEISMTsG2\",\"avatar\":\"https://pbs.twimg.com/profile_images/418151192116858880/MEqIsBH7_normal.jpeg\"},{\"name\":\"Sonja
+  Waltman\",\"body\":\"#timematters #volunteersmakeithappen http://t.co/65G3ZmbMzE\",\"avatar\":\"https://pbs.twimg.com/profile_images/418151192116858880/MEqIsBH7_normal.jpeg\"},{\"name\":\"Danyelle
+  Crow\",\"body\":\"RT @Christianichles: Guilt about your parenting? Today is a must
+  here @FBCMossBluff #LYM 9 or 10:30 #TimeMatters\",\"avatar\":\"https://pbs.twimg.com/profile_images/450022630788050944/ZgEtv3o0_normal.jpeg\"},{\"name\":\"24me\",\"body\":\"\\\"Love
+  is that condition in which the happiness of another is essential to your own\\\"
+  -Robert Heinlein #TimeMatters http://t.co/rxG2SEcLQw\",\"avatar\":\"https://pbs.twimg.com/profile_images/3041314207/f890454af94368c772a461e060a0219b_normal.png\"},{\"name\":\"Christian
+  Nichles\",\"body\":\"Guilt about your parenting? Today is a must here @FBCMossBluff
+  #LYM 9 or 10:30 #TimeMatters\",\"avatar\":\"https://pbs.twimg.com/profile_images/419674403899584512/ha6ja5bB_normal.jpeg\"}],\"id\":\"twitter_mentions\",\"updatedAt\":1406466376}\n\n"
+convergence: |+
+  data: {"points":[{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"},{"x":"5","y":"9"}],"id":"convergence","updatedAt":1406466428}
+
+torvalds/linux: |+
+  data: {"repo":"torvalds/linux","issues":3,"pulls":47,"forks":5877,"watchers":2520,"stargazers":14781,"activity":"22 minutes","id":"torvalds/linux","updatedAt":1406466377}
+
+valuation: |+
+  data: {"current":37,"last":63,"id":"valuation","updatedAt":1406466429}
+
+karma: |+
+  data: {"current":195667,"last":184757,"id":"karma","updatedAt":1406466429}
+
+synergy: |+
+  data: {"value":28,"id":"synergy","updatedAt":1406466429}
+

@@ -43,6 +43,10 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.6.11)
     json (1.8.1)
+    koala (1.10.0)
+      addressable
+      faraday
+      multi_json
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     mime-types (1.25.1)
@@ -113,6 +117,7 @@ DEPENDENCIES
   actionview
   dashing
   json
+  koala
   octokit
   rest-client
   twitter (>= 5.9.0)
