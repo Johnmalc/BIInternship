@@ -9,8 +9,8 @@ current_karma = 0
 	#puts row.inspect
 	#end
 	#musi to byt slozka i kdyz to potom nefunguje localne
-   #mail = CSV.read('mail.csv', "r", headers: true, col_sep: ",", converters: :numeric)
-   #puts mail["num"][0]
+  #mail = CSV.read('mail.csv', "r", headers: true, col_sep: ",", converters: :numeric)
+  #puts mail["num"][0]
 
 
 SCHEDULER.every '2s' do

@@ -1,15 +1,18 @@
 require 'csv'
 
 # Populate the graph with some random points
+
+#prvni = []
+#test = []
+#revenues = ["5", "9", "2"]
+
+mail = CSV.read('jobs/mail.csv', "r", headers: true, col_sep:",", converters: :numeric)
+cur= mail["revenue"][0]
+
 points = []
 (1..10).each do |i|
-  points << { x: i, y: rand(50) }
+  points << { x: i, y: cur }
 end
-last_x = points.last[:x]
-
-prvni = []
-test = []
-revenues = ["5", "9", "2"]
 
 =begin
 mail = CSV.read('mail.csv', "r", headers: true, col_sep:",", converters: :numeric)
@@ -20,14 +23,11 @@ puts test
 =end
 
 SCHEDULER.every '2s' do
+
+  last_x = points.last[:x]
   points.shift
   last_x += 1
-  points << { x: last_x, y: rand(50) }
-  prvni << { x: revenues[0], y:revenues[1] }
+  points << { x: last_x, y: cur}
 
-  mail = CSV.read('jobs/mail.csv', "r", headers: true, col_sep:",", converters: :numeric)
-  cur= mail["revenue"][0]
-  test << {x: rand(10), y: cur}
-
-  send_event('convergence', points: test)
+  send_event('convergence', points: points)
 end
