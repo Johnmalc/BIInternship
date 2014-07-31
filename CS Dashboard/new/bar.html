@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>CS Dashboard</title>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/csv.js"></script>
+        <script type="text/javascript" src="../js/papaparse.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts-more.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+       /*     $(function () {
+                $('#container').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Real Time Created Order at t:m GmbH'
+                    },
+                    subtitle: {
+                        text: 'in TEUR'
+                    },
+                    xAxis: {
+                        categories: [
+                            'Sameday Air',
+                            'Sameday Rail',
+                            'E-Log'
+                        ]
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Revenue'
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            //colorByPoint: true,
+                            //colors: ['#e4d354', '#e4m3p4', '#e4r354'],
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{
+                        name: 'Actual',
+                        data: [49.9, 71.5, 106.4]
+            
+                    }, {
+                        name: 'PY',
+                        data: [83.6, 78.8, 98.5]
+            
+                    }, {
+                        name: 'Budget',
+                        data: [48.9, 38.8, 39.3]
+                    }]
+                });
+            });*/
+        </script>
+
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        
+        <script type="text/javascript"> 
+            Papa.parse("C:/Users/Dima/Downloads/CS Dashboard/CS Dashboard/RealTimeRevenueFooter.csv", { download: true, complete: function(results) { console.log("Remote file parsed!", results); } });
+        </script>
+</body>
+
+</html>
+
+
+
+
+
+
