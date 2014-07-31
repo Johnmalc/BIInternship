@@ -8,24 +8,25 @@
         <title>CS Dashboard</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../js/csv.js"></script>
         <script type="text/javascript" src="../js/papaparse.js"></script>
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <script src="http://code.highcharts.com/modules/exporting.js"></script>
     </head>
+       <!-- $("body").data("budget", csvAsArray[2]);        -->
 
     <body>
         <script type="text/javascript">
-            Papa.parse("..csv/RealTimeRevenueFooter.csv", { 
+            Papa.parse("../csv/RealTimeRevenueFooter.csv", { 
                 download: true, 
                 delimiter: "|",
                 dynamicTyping: true,
                 complete: function(results) { 
-                    console.log("Remote file parsed!", results); 
-                } 
+                    ter = $("body").data("values", results.data);console.log(ter);
+                }
             });
+            
 
             $(function () {
                 $('#container').highcharts({
