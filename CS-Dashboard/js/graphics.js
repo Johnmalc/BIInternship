@@ -35,25 +35,25 @@
                     linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
                     stops: [
                         [0, '#333'],
-                        [1, '#FFF']
+                        [1, '#DDD']
                     ]
                 },
-                borderWidth: 1,
+                borderWidth: 5,
                 outerRadius: '107%'
             }, {
                 // default background
             }, {
-                backgroundColor: '#DDD',
+                backgroundColor: '#EEE',
                 borderWidth: 0,
                 outerRadius: '105%',
-                innerRadius: '103%'
+                innerRadius: '102%'
             }]
         },
            
         // the value axis
         yAxis: {
-            min: 20,
-            max: 160,
+            min: 35,
+            max: 150,
             
             minorTickInterval: 'auto',
             minorTickWidth: 1,
@@ -83,7 +83,7 @@
             }, {
                 from: 60,
                 to: 80,
-                color: '#DF5353' // orange
+                color: '#FFA500' // orange
             }, {
                 from: 80,
                 to: 100,
@@ -103,7 +103,7 @@
             name: 'Speed',
             data: [80],
             tooltip: {
-                valueSuffix: ' km/h'
+                valueSuffix: ' ls/h'
             }
         }]
     
@@ -114,24 +114,24 @@
             setInterval(function () {
                 var point = chart.series[0].points[0],
                     newVal,
-                    inc = Math.round((Math.random() - 0.5) * 60);
+                    inc = Math.round((Math.random() - 1) * 60);
                 
                 newVal = point.y + inc;
                 if (newVal < 0 || newVal > 200) {
                     newVal = point.y - inc;
                 }
                 
-                point.update(newVal);
-                    
+                var rail;    
                 Papa.parse("../csv/RealTimeRevenueFooter.csv", { 
                     download: true, 
                     delimiter: "|",
                     dynamicTyping: true,
                     complete: function(results) { 
-                      console.log(results.data);
+                        rail = results.data[0][0];
                     }
                 });
-
+                // sent it to graphic
+                point.update(rail);
             }, 3000);
         }
     });
