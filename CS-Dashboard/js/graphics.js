@@ -1,5 +1,6 @@
  $(function () {
-    $('#container, #pekne').highcharts({
+
+    $('#container').highcharts({
     
         chart: {
             type: 'gauge',
@@ -98,45 +99,45 @@
                 color: '#005800' // green
             }]        
         },
-    
+
         series: [{
-            name: 'Speed',
-            data: [80],
+            name: 'Revenue',
+            data: [0], // zacatek
             tooltip: {
-                valueSuffix: ' ls/h'
+                valueSuffix: ' TEUR'
             }
         }]
     
-    }, 
+    },
     // Add some life
     function (chart) {
         if (!chart.renderer.forExport) {
+            var currentNumber;    
+            var nowNumber;
             setInterval(function () {
-                var point = chart.series[0].points[0],
-                    newVal,
-                    inc = Math.round((Math.random() - 1) * 60);
-                
-                newVal = point.y + inc;
-                if (newVal < 0 || newVal > 200) {
-                    newVal = point.y - inc;
-                }
-                
-                var rail;    
+
                 Papa.parse("../csv/RealTimeRevenueFooter.csv", { 
                     download: true, 
                     delimiter: "|",
                     dynamicTyping: true,
                     complete: function(results) { 
-                        rail = results.data[0][0];
+                        currentNumberArray = results.data[0];
+                        nowNumber = currentNumberArray[3];
+                        var point = chart.series[0].points[0],
+                                    newVal,
+                                    inc = Math.round(nowNumber);
+                                    console.log(nowNumber);
+                                    newVal = point.y + inc;
+                                    if (newVal < 0 || newVal > 200) {
+                                        newVal = point.y - inc;
+                                    }
+                                    point.update(newVal);
                     }
                 });
-                // sent it to graphic
-                point.update(rail);
+                
             }, 3000);
         }
     });
 });
-
-
 
 
