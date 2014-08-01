@@ -13,5 +13,7 @@ svg_ai/
 csv/
 sounds/
 backup/
+*.ftppass
 BACKUPS22222/
+node_modules/
 support_img/
