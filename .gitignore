@@ -7,6 +7,7 @@
 *.xls
 *.xlsx
 *.zip
+*.log
 *.rar
 *.ftppass
 Gruntfile.js
@@ -17,4 +18,5 @@ sounds/
 backup/
 BACKUPS22222/
 node_modules/
+bower_components/
 support_img/
