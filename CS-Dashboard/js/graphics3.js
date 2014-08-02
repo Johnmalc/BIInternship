@@ -1,25 +1,7 @@
 $(function () {
-    var rail;
-    var rail1;
-    var rail2;
-    var rail3;
-
-    Papa.parse("../csv/RealTimeRevenueFooter.csv", { 
-        download: true, 
-        delimiter: "|",
-        dynamicTyping: true,
-        complete: function(results) { 
-            rail = results.data[0];
-            rail1 = results.data[0][1];
-            rail2 = results.data[0][1];
-            rail3 = results.data[0][2];
-            //console.log(rail1);
-        }
-    });
-
     var options = {
         chart: {
-            renderTo: 'container',
+            renderTo: 'container3',
             type: 'column'
         },
         title: {
@@ -59,39 +41,38 @@ $(function () {
         },
         series: []
     };
+            $.get('../csv/data.csv', function(data) {
+                // Split the lines
+                lines = data.split('\n');
+                $.each(lines, function(lineNo, line) {
+                    items = line.split(',');
 
-    $.get('../csv/data.csv', function(data) {
-        // Split the lines
-        var lines = data.split('\n');
-        $.each(lines, function(lineNo, line) {
-            var items = line.split(',');
-            
-            // header line containes categories
-            if (lineNo == 0) {
-                $.each(items, function(itemNo, item) {
-                    if (itemNo > 0) options.xAxis.categories.push(item);
-                });
-            }
-            
-            // the rest of the lines contain data with their name in the first position
-            else {
-                var series = { 
-                    data: []
-                };
-                $.each(items, function(itemNo, item) {
-                    if (itemNo == 0) {
-                        series.name = item;
-                    } else {
-                        series.data.push(parseFloat(item));
+                    // header line containes categories
+                    if (lineNo == 0) {
+                        $.each(items, function(itemNo, item) {
+                            if (itemNo > 0) 
+                                options.xAxis.categories.push(item);
+                        });
                     }
+                    // the rest of the lines contain data with their name in the first position
+                    else {
+                        series = { 
+                            data: []
+                        };
+                        $.each(items, function(itemNo, item) {
+                            console.log(series);
+                            if (itemNo == 0) {
+                                series.name = item;
+                            } else {
+                                series.data.push(parseFloat(item));
+                                
+                            }
+                        });
+                        options.series.push(series);
+                    }              
                 });
-                
-                options.series.push(series);
+                var chart = new Highcharts.Chart(options);
+            });
 
-            }
-            
-        });
-        
-        var chart = new Highcharts.Chart(options);
-    });
+
 });

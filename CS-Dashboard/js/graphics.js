@@ -53,8 +53,8 @@
            
         // the value axis
         yAxis: {
-            min: 35,
-            max: 150,
+            min: 400,
+            max: 650,
             
             minorTickInterval: 'auto',
             minorTickWidth: 1,
@@ -68,7 +68,7 @@
             tickLength: 15,
             tickColor: '#666',
             labels: {
-                step: 2,
+                step: 5,
                 rotation: 'auto'
             },
             title: {
@@ -78,31 +78,31 @@
                 }
             },
             plotBands: [{
-                from: 40,
-                to: 60,
+                from: 400,
+                to: 450,
                 color: '#DF5353' // red
             }, {
-                from: 60,
-                to: 80,
+                from: 450,
+                to: 500,
                 color: '#FFA500' // orange
             }, {
-                from: 80,
-                to: 100,
+                from: 500,
+                to: 550,
                 color: '#FFFF00' // yellow
             }, {
-                from: 100,
-                to: 120,
+                from: 550,
+                to: 600,
                 color: '#32FF32' // lime
             }, {
-                from: 120,
-                to: 140,
+                from: 600,
+                to: 650,
                 color: '#005800' // green
             }]        
         },
 
         series: [{
             name: 'Revenue',
-            data: [0], // zacatek
+            data: [0], // begin here
             tooltip: {
                 valueSuffix: ' TEUR'
             }
@@ -122,20 +122,22 @@
                     dynamicTyping: true,
                     complete: function(results) { 
                         currentNumberArray = results.data[0];
-                        nowNumber = currentNumberArray[3];
+                        nowNumber = currentNumberArray[3]; // number here to fetch for values
                         var point = chart.series[0].points[0],
                                     newVal,
                                     inc = Math.round(nowNumber);
-                                    console.log(nowNumber);
+                                    //console.log(nowNumber);
+                                    //console.log(point);
+                                    point.y = 0; // reset every 3 seconds to 0. Then 0+ new value.
                                     newVal = point.y + inc;
-                                    if (newVal < 0 || newVal > 200) {
-                                        newVal = point.y - inc;
-                                    }
+                                    //if (newVal < 0 || newVal > 200) {
+                                    //    newVal = point.y - inc;
+                                    //}
                                     point.update(newVal);
                     }
                 });
                 
-            }, 3000);
+            }, 2000);
         }
     });
 });

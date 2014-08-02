@@ -30,9 +30,9 @@ $(function () {
                     var series = this.series[0];
                     setInterval(function() {
                         var x = (new Date()).getTime(), // current time
-                            y = rail; // Math.random()
+                            y = Math.random()//rail; // Math.random()
                         series.addPoint([x, y], true, true);
-                    }, 1000);
+                    }, 5000);
                 }
             }
         },
@@ -76,8 +76,8 @@ $(function () {
 
                 for (i = -19; i <= 0; i++) {
                     data.push({
-                        x: time + i * 1000,
-                        y: rail //Math.random()
+                        x: time + i * 5000,
+                        y: Math.random() //rail
                     });
                 }
                 return data;

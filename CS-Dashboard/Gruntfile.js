@@ -3,15 +3,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    /*uglify: {
-      options: {*/
-    //    banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-    /*},
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    },*/
     watch: {
       css: {
         files: ['css/*.css'],
@@ -29,16 +20,31 @@ module.exports = function(grunt) {
         command: 'sshpass -p "meLAB#14" scp -P 22 -r /home/jm/Documents/matters/BIInternship.git/CS-Dashboard/js/*.* "user14@b40.cz:/var/www/html/b40.cz/js/"'
 
       }
+    },
+    "sftp-deploy": {
+      build: {
+        auth: {
+          host: 'www.b40.cz',
+          port: 22,
+          authKey: 'key1'
+        },
+        src: ['/home/jm/Documents/matters/BIInternship.git/CS-Dashboard/csv/'],
+        dest: ['/var/www/html/b40.cz/csv'],
+        exclusions: ['/home/jm/Documents/matters/BIInternship.git/CS-Dashboard/csv/upload.sh', '/home/jm/Documents/matters/BIInternship.git/CS-Dashboard/bower_components', '/home/jm/Documents/matters/BIInternship.git/CS-Dashboard/node_modules', '/home/jm/Documents/matters/BIInternship.git/CS-Dashboard/img', '/home/jm/Documents/matters/BIInternship.git/CS-Dashboard/img_support'],
+        serverSep: '/',
+        concurrency: 4,
+        progress: true
+      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-sftp-deploy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   //   grunt.registerTask('default', ['uglify', 'shell']);
-  grunt.registerTask('default', ['watch', 'newer:shell']);
+  grunt.registerTask('default', ['sftp-deploy']);
 
 };

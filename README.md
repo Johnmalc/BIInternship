@@ -6,6 +6,7 @@ This repository contains all code I wrote during my internship during the Q1 of 
 One of my goals was to create a **BI Dashboard** and this has been accomplished with HTML/CSS/JavaScript (a lot of it). You can find it in the "CS Dashboard" folder. It works by loading pictures which are in the same folder (not included here). These display our data and content (all of them are confidential and you won't find them here).
 
 In the "R Scripts" folder you can find **R-projects** which I wrote additionally for myself. You will always need to have source CSV files, which are not included here, too.
+And even if, they are definitely fake.
 
 # Technologies & Tools used here #
 
