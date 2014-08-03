@@ -87,6 +87,17 @@ h1 {
     background-color: #BAAE94;
 }
 
+#footer2 {
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 33px;
+    height: 60px;
+    background-color: #BAAE94;
+}
+
+
 #footer td {
     font-size:33px;
 }
