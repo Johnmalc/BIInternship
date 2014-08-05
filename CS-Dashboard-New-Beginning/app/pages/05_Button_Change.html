@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Control Panel">
+        <title>CS Dashboard - Control panel</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/AjaxCallsCSV.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js" ></script>
+    </head>
+
+    <body >
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#option1").on( "click", function() {
+                    $("body").first().css("background-color","white");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#option2").on( "click", function() {
+                    $("body").first().css("background-color","red");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#option3").on( "click", function() {
+                    $("body").first().css("background-color","blue");
+                });
+            });
+        </script>
+    
+        <div class="container-fluid">
+            <div class="col-lg-6 col-lg-offset-5" style="padding-top:60px;">
+                <button type="button" class="btn btn-primary" id="option1">Primary</button>
+                <button type="button" class="btn btn-success" id="option2">Success</button>
+                <button type="button" class="btn btn-info" id="option3">Info</button>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+</html>

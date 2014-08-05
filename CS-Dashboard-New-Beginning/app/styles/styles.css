@@ -1,0 +1,132 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* http://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page */
+    overflow-x:hidden;
+    margin-bottom: 75px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.nahoru {
+    padding-top: 60px;
+}
+
+.padding {
+    padding-top: 30px;
+}
+
+/* vertical align of pictures > bottom */
+.span6 {
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
+}
+
+.doleva {
+    padding-right: 60px;
+}
+
+.nahoruVice {
+  padding-top: 70px;
+}
+
+.doprava {
+  padding-left: 75px;
+}
+
+/* http://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
+.fourth {
+    background-image: url('../img/elogv.png');
+    width: 300px;
+    height: 450px;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+}
+/*
+.third {
+    background-image: url('../img/sdtotalv.png');
+    width: 250px;
+    height: 400px;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+/*    background-size: cover;
+}*/
+
+.second {
+    background-image: url('../img/sdairv.png');
+    width: 300px;
+    height: 450px;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+}
+
+.first {
+    background-image: url('../img/sdrailv.png');
+    width: 300px;
+    height: 450px;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    background-color: #BAAE94;
+}
+
+#footer2 {
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 33px;
+    height: 60px;
+    background-color: #BAAE94;
+}
+
+
+#footer td {
+    font-size:33px;
+}
+
+#footer div {
+    padding-top: 20px;
+}
+
+.yellow {
+    background-color: rgb(255,179,0);
+}
+.blue {
+    background-color: rgb(0,0,102);
+}
+.seda {
+    background-color: rgb(102,102,102);
+}
+.red {
+    background-color: rgb(243,33,37);
+}
+.red2 {
+    background-color: rgb(209,0,19);
+}
+.DC9A4D {
+    background-color: #DC9A4D;
+}
+/* http://css-tricks.com/using-css-for-image-borders/ */
+.obdelnik img {
+    padding:1px;
+    border:5px solid #DC9A4D;
+    background-color: #DC9A4D;
+}
