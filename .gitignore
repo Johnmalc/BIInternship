@@ -9,13 +9,10 @@
 *.zip
 *.log
 *.rar
-*.ftppass
-Gruntfile.js
 img/
-svg_ai/
+images/
+csv/
 sounds/
-backup/
-BACKUPS22222/
+support_img/
 node_modules/
 bower_components/
-support_img/
