@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                 tasks: ['bowerInstall']
             },
             js: {
-                files: ['<%= config.app %>/scripts/{,*/}*.js'],
+                files: ['<%= config.app %>/scripts/**/*.js'],
                 tasks: ['jshint'],
                 options: {
                     livereload: true
@@ -48,18 +48,8 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             styles: {
-                files: ['<%= config.app %>/styles/{,*/}*.css'],
+                files: ['<%= config.app %>/styles/**/*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
-            },
-            livereload: {
-                options: {
-                    livereload: '<%= connect.options.livereload %>'
-                },
-                files: [
-                    '<%= config.app %>/{,*/}*.html',
-                    '.tmp/styles/{,*/}*.css',
-                    '<%= config.app %>/images/{,*/}*'
-                ]
             }
         },
         wiredep : {
@@ -97,7 +87,6 @@ module.exports = function (grunt) {
                 'Gruntfile.js',
                 '<%= config.app %>/scripts/{,*/}*.js',
                 '!<%= config.app %>/scripts/vendor/*',
-                'test/spec/{,*/}*.js'
             ]
         },
 
@@ -111,7 +100,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '.tmp/styles/',
                     src: '{,*/}*.css',
-                    dest: '.tmp/styles/'
+                    dest: 'dist/styles/'
                 }]
             }
         },
@@ -154,8 +143,8 @@ module.exports = function (grunt) {
             options: {
                 assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
             },
-            html: ['<%= config.dist %>/{,*/}*.html'],
-            css: ['<%= config.dist %>/styles/{,*/}*.css']
+            html: ['<%= config.dist %>/**/*.html'],
+            css: ['<%= config.dist %>/styles/**/*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
@@ -238,9 +227,8 @@ module.exports = function (grunt) {
                     dest: '<%= config.dist %>',
                     src: [
                         '*.{ico,png,txt}',
-                        'images/{,*/}*.webp',
-                        '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
+                        '**/*.html',
+                        'styles/{,*/}*.*'
                     ]
                 }, {
                     expand: true,
@@ -254,8 +242,8 @@ module.exports = function (grunt) {
                 expand: true,
                 dot: true,
                 cwd: '<%= config.app %>/styles',
-                dest: '.tmp/styles/',
-                src: '{,*/}*.css'
+                dest: '<%= config.dist %>/styles',
+                src: '**/*.css'
             }
         },
 
@@ -285,14 +273,8 @@ module.exports = function (grunt) {
             'clean:server',
             'concurrent:server',
             'autoprefixer',
-            'connect:livereload',
             'watch'
         ]);
-    });
-
-    grunt.registerTask('server', function (target) {
-        grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-        grunt.task.run([target ? ('serve:' + target) : 'serve']);
     });
 
     grunt.registerTask('test', function (target) {
@@ -303,10 +285,6 @@ module.exports = function (grunt) {
                 'autoprefixer'
             ]);
         }
-
-        grunt.task.run([
-            'connect:test'
-        ]);
     });
 
     grunt.registerTask('build', [
