@@ -7,7 +7,7 @@
     function requestData() {
         //var firtst = null;
         $.ajax({
-            url: 'json.php',
+            url: '../json.php',
             success: function(point) {
                 var series = chart.series[0],
                     seri = chart.series[1],

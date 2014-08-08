@@ -115,9 +115,9 @@ if (!session_id()) session_start();
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
-                                <td>13</td>
+                                <td>14</td>
                                 <td>None</td>
-                                <td><a href="/pages/13.html">13.html</a></td>
+                                <td><a href="/pages/14.html">14.html</a></td>
                                 <td>No Status</td>
                             </tr>
                         </tbody>
