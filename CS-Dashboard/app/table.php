@@ -45,79 +45,79 @@ if (!session_id()) session_start();
                             <tr class="warning">
                                 <td>1</td>
                                 <td>Created Directly from SAS</td>
-                                <td><a href="/pages/01_NI_Real_Time.html">01_Ni_Real_Time.html</a></td>
+                                <td><a href="/pages/01_NI_Real_Time.php">01_Ni_Real_Time.php</a></td>
                                 <td>Killed-nobody like it</td>
                             </tr>
                             <tr class="warning">
                                 <td>2</td>
                                 <td>Too</td>
-                                <td><a href="/pages/02_NI_SD_ELog_Last_12_Weeks.html">02_NI_SD_ELog_Last_12_Weeks.html</a></td>
+                                <td><a href="/pages/02_NI_SD_ELog_Last_12_Weeks.php">02_NI_SD_ELog_Last_12_Weeks.php</a></td>
                                 <td>Too</td>
                             </tr>
                             <tr class="warning">
                                 <td>3</td>
                                 <td>Created from Excel File/Marco</td>
-                                <td><a href="/pages/03_ZXO_Elog_Market_Rev.html">03_ZXO_Elog_Market_Rev.html</a></td>
+                                <td><a href="/pages/03_ZXO_Elog_Market_Rev.php">03_ZXO_Elog_Market_Rev.php</a></td>
                                 <td>Too</td>
                             </tr>
                             <tr class="warning">
                                 <td>4</td>
                                 <td>Too</td>
-                                <td><a href="/pages/04_SD_Air_Rail_Market_Rev.html">04_SD_Air_Rail_Market_Rev.html</a></td>
+                                <td><a href="/pages/04_SD_Air_Rail_Market_Rev.php">04_SD_Air_Rail_Market_Rev.php</a></td>
                                 <td>Too</td>
                             </tr>
                             <tr class="danger">
                                 <td>5</td>
                                 <td>Change Colors of Background</td>
-                                <td><a href="/pages/05_Button_Change.html">05_Button_Change.html</a></td>
+                                <td><a href="/pages/05_Button_Change.php">05_Button_Change.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>6</td>
                                 <td>Combination of 1st and 2nd</td>
-                                <td><a href="/pages/06_All_in_One.html">06_All_in_One.html</a></td>
+                                <td><a href="/pages/06_All_in_One.php">06_All_in_One.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>7</td>
                                 <td>Angular Gauge with <a href="http://www.highcharts.com/demo/gauge-speedometer">HighCharts</a></td>
-                                <td><a href="/pages/07.html">07.html</a></td>
+                                <td><a href="/pages/07.php">07.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>8</td>
                                 <td>Line Chart with streaming (live) data <a href="http://www.highcharts.com/demo/dynamic-update/">HighCharts</a> </td>
-                                <td><a href="/pages/08.html">08.html</a></td>
+                                <td><a href="/pages/08.php">08.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>9</td>
                                 <td>Column Chart (grouped) <a href="http://www.highcharts.com/demo/column-negative">HighChart</a></td>
-                                <td><a href="/pages/09.html">09.html</a></td>
+                                <td><a href="/pages/09.php">09.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>10</td>
                                 <td>Combination of <a href="http://www.highcharts.com/demo/column-stacked">Stacked Columns</a> and example above</td>
-                                <td><a href="/pages/10.html">10.html</a></td>
+                                <td><a href="/pages/10.php">10.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>11</td>
                                 <td>Solid gauge <a href="http://www.highcharts.com/demo/gauge-solid">HighCharts</a></td>
-                                <td><a href="/pages/11.html">11.html</a></td>
+                                <td><a href="/pages/11.php">11.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>12</td>
                                 <td>Combination of columns and line (and dual axes) <a href="http://www.highcharts.com/demo/combo-dual-axes">HighCharts</a></td>
-                                <td><a href="/pages/12.html">12.html</a></td>
+                                <td><a href="/pages/12.php">12.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="success">
                                 <td>14</td>
                                 <td>None</td>
-                                <td><a href="/pages/14.html">14.html</a></td>
+                                <td><a href="/pages/14.php">14.php</a></td>
                                 <td>No Status</td>
                             </tr>
                         </tbody>

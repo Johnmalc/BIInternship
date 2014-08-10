@@ -11,7 +11,7 @@
 *.rar
 img/
 images/
-csv/
+!csv/
 sounds/
 support_img/
 node_modules/

@@ -1,9 +1,17 @@
+<php
+if (!session_id()) session_start();
+    if (!$_SESSION['logon']){ 
+        header("Location:table.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
         <title>CS Dashboard</title>
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -28,28 +36,28 @@
             }, 60000);
             doAJAXRevenue('../csv/RealTimeRevenueFooter.csv');
         </script> 
-
+        
         <div class="container-fluid">
             <div class="row">
                 <!--<div class="col-lg-5">
                     <img src="support_img/logo.jpg" width="450" height="80">
                 </div>-->
                 <div class="col-lg-9 col-lg-offset-3">
-                    <h1>WKLY Sameday Market Rev. in TEUR</h1>
+                    <h1>WKLY ZXO/E-Log Market Rev. in TEUR</h1>
                 </div>
             </div>
              
             <div class="row nahoru">    
-                <div class=" col-lg-8">
-                    <img src="/img/sdair_market_rev.png" height="360" width="1300">
-                    <img src="/img/sdrail_market_rev.png" height="360" width="1300">  
+                <div class="col-lg-8">
+                    <img src="/img/elog_market_rev.png" height="360" width="1300"> 
+                    <img src="/img/zxo_market_rev.png" height="360" width="1300">
                 </div>
             </div>
 
             <div class="row">
                 <footer id="footer" >
                     <table>
-                        <tbody  >
+                        <tbody >
                             <tr style="">
                                 <td class="time" style="font-size:33px;">
                                     <script type="text/javascript">date_time('date_time')</script> 

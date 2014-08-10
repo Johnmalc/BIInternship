@@ -1,3 +1,10 @@
+<php
+if (!session_id()) session_start();
+    if (!$_SESSION['logon']){ 
+        header("Location:table.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

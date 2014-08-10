@@ -1,3 +1,10 @@
+<php
+if (!session_id()) session_start();
+    if (!$_SESSION['logon']){ 
+        header("Location:table.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,6 +12,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <!-- Dont cache -->
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <!-- / Dont cache -->
         <title>CS Dashboard</title>
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -20,37 +34,67 @@
         <link href="/styles/styles.css" rel="stylesheet">
         <script type="text/javascript" src="/scripts/csv.js"></script>
         <script type="text/javascript" src="/scripts/AjaxCallsCSV.js"></script>
+        <script type="text/javascript" src="/scripts/ion.sound.min.js"></script>
     </head>
 
     <body>
+        <script type="text/javascript"> 
+            playSound();    
+            $.ionSound({
+                sounds: [
+                    "metal_plate"
+                ],
+                path: "sounds/"
+            });
+        </script>
+
         <script type="text/javascript">
             setTimeout(function () { 
                 location.reload(true); 
-            }, 60000);
+            }, 60000);   
             doAJAXRevenue('../csv/RealTimeRevenueFooter.csv');
-        </script> 
-        
+        </script>  
+
         <div class="container-fluid">
             <div class="row">
                 <!--<div class="col-lg-5">
                     <img src="support_img/logo.jpg" width="450" height="80">
                 </div>-->
                 <div class="col-lg-9 col-lg-offset-3">
-                    <h1>WKLY ZXO/E-Log Market Rev. in TEUR</h1>
+                    <h1>Value Orders Created in TEUR at t:m Group</h1>
                 </div>
             </div>
              
-            <div class="row nahoru">    
-                <div class="col-lg-8">
-                    <img src="/img/elog_market_rev.png" height="360" width="1300"> 
-                    <img src="/img/zxo_market_rev.png" height="360" width="1300">
-                </div>
+            <div class="row nahoru">
+                <div class="padding">
+                    <div class="col-lg-4" >
+                        <h1>Sameday Rail</h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>Sameday Air</h1>
+                    </div>
+                    <div class="col-lg-4" style="padding-left: 90px;">
+                        <h1>E-Log</h1>
+                    </div>
+                </div>    
+                                    
+                <div class="row">
+                    <div class="col-lg-4 nahoru">
+                        <div class="first"></div>
+                    </div>
+                    <div class="col-lg-4 nahoru">
+                        <div class="second"></div>
+                    </div>   
+                    <div class="col-lg-4 nahoru">
+                        <div class="fourth"></div>
+                    </div>
+               </div>
             </div>
 
             <div class="row">
                 <footer id="footer" >
                     <table>
-                        <tbody >
+                        <tbody  >
                             <tr style="">
                                 <td class="time" style="font-size:33px;">
                                     <script type="text/javascript">date_time('date_time')</script> 

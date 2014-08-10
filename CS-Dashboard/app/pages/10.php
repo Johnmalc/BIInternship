@@ -1,3 +1,10 @@
+<php
+if (!session_id()) session_start();
+    if (!$_SESSION['logon']){ 
+        header("Location:table.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,22 +19,23 @@
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
-        <script type="text/javascript" src="/scripts/papaparse.js"></script>
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
-        <script type="text/javascript" src="/scripts/graphics12.js"></script>
-        <script type="text/javascript" src="/scripts/graphics13.js"></script>
-
+        <script type="text/javascript" src="/scripts/papaparse.js"></script>
+        <script type="text/javascript" src="/scripts/graphics10.js"></script>
+        <script type="text/javascript" src="/scripts/graphics9.js"></script>
     </head>
 
     <body>        
-        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-       <!-- <div id="test" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
 
-        <script type="text/javascript">
-            setTimeout(function () { 
-                location.reload(true); 
-            }, 432000);  
-        </script>
+        <div id="container" style="max-width: 1000px; height: 350px; margin: 0 auto"></div>
+        <div id="container3" style="max-width: 1000px; height: 350px; margin: 0 auto"></div>
+
     </body>
 </html>
+
+
+
+
+
+
