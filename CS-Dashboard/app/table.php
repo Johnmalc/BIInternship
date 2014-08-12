@@ -116,8 +116,14 @@ if (!session_id()) session_start();
                             </tr>
                             <tr class="success">
                                 <td>14</td>
-                                <td>None</td>
+                                <td>Area Chart (Reverted)</td>
                                 <td><a href="/pages/14.php">14.php</a></td>
+                                <td>No Status</td>
+                            </tr>
+                            <tr class="success">
+                                <td>14</td>
+                                <td>Pia Chart </td>
+                                <td><a href="/pages/15.php">15.php</a></td>
                                 <td>No Status</td>
                             </tr>
                         </tbody>

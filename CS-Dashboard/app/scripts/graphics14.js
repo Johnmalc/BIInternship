@@ -35,7 +35,7 @@ $(document).ready(function() {
             inverted: true
         },
         title: {
-            text: 'Sum of offers realized and not during one week'
+            text: '(Not)Realized E-Log Offers during last week'
         },
         subtitle: {
             style: {
@@ -56,13 +56,13 @@ $(document).ready(function() {
         },
         xAxis: {
             categories: [
-                '1.8',
-                '2.8',
-                '3.8',
-                '4.8',
-                '5.8',
-                '6.8',
-                '7.8'
+                'Monday',
+                'Tuesday',
+                'Wednesday',
+                'Thursday',
+                'Friday',
+                'Saturday',
+                'Sunday'
             ]
         },
         yAxis: {
@@ -82,10 +82,10 @@ $(document).ready(function() {
             }
         },
         series: [{
-            name: 'Offers_realized',
+            name: 'Offers realized',
             data: []
         }, {
-            name: 'Offers_not_realized',
+            name: 'Offers not realized',
             data: []
         }]
     });
