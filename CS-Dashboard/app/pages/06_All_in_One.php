@@ -1,11 +1,10 @@
-<php
+<?php
 if (!session_id()) session_start();
     if (!$_SESSION['logon']){ 
         header("Location:table.php");
         die();
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,6 +12,7 @@ if (!session_id()) session_start();
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <!-- Dont cache -->
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="cache-control" content="max-age=0" />
@@ -59,11 +59,8 @@ if (!session_id()) session_start();
             doAJAXRevenue('../csv/RealTimeRevenueFooter.csv');
         </script> 
 
-        <div class="container-fluid" style="margin-left:20px;">
+        <div class="container-fluid" style="margin-left:5px;">
             <div class="row">
-                <!--<div class="col-lg-5">
-                    <img src="support_img/logo.jpg" width="450" height="80">
-                </div>-->
                 <div class="col-lg-9 col-lg-offset-3">
                     <h1>Value Orders Created in TEUR at t:m Group</h1>
                 </div>
@@ -117,8 +114,8 @@ if (!session_id()) session_start();
             <div class="row">
                 <footer id="footer2" >
                     <table>
-                        <tbody  >
-                            <tr style="">
+                        <tbody>
+                            <tr>
                                 <td class="time" style="font-size:33px;">
                                     <script type="text/javascript">date_time('date_time')</script> 
                                 </td>

@@ -1,4 +1,4 @@
-<php
+<?php
 if (!session_id()) session_start();
     if (!$_SESSION['logon']){ 
         header("Location:table.php");
@@ -23,7 +23,7 @@ if (!session_id()) session_start();
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <script type="text/javascript" src="/scripts/graphics12.js"></script>
-        <script type="text/javascript" src="/scripts/graphics13.js"></script>
+        <!-- <script type="text/javascript" src="/scripts/graphics13.js"></script> -->
 
     </head>
 

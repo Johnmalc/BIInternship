@@ -3,6 +3,7 @@
     /**
      * Request data from the server, add it to the graph and set a timeout 
      * to request again
+     * POZOR:Iprava nutna v SASu, jinak bude stejne prepsan.
      */
     function requestData() {
         //var firtst = null;
@@ -43,7 +44,7 @@
                 text: 'Emergency Logistics Market Revenue (Actual x PY)'
             },
             subtitle: {
-                text: ''
+                text: 'Och, those numbers!'
             },
             xAxis: [{
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -79,6 +80,13 @@
             }],
             tooltip: {
                 shared: true
+            },
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
             },
             legend: {
                 layout: 'vertical',

@@ -1,11 +1,10 @@
-<php
+<?php
 if (!session_id()) session_start();
     if (!$_SESSION['logon']){ 
         header("Location:table.php");
         die();
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -71,6 +70,7 @@ if (!session_id()) session_start();
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                 <footer id="footer">
                     <table>

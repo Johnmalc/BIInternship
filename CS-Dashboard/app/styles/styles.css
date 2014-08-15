@@ -21,23 +21,23 @@ h1 {
     padding-top: 30px;
 }
 
-/* vertical align of pictures > bottom */
-.span6 {
-    display: table-cell;
-    vertical-align: bottom;
-    float: none;
-}
-
 .doleva {
     padding-right: 60px;
 }
 
 .nahoruVice {
-  padding-top: 70px;
+    padding-top: 70px;
 }
 
 .doprava {
-  padding-left: 75px;
+    padding-left: 75px;
+}
+
+/* vertical align of pictures > bottom */
+.span6 {
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
 }
 
 /* http://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */

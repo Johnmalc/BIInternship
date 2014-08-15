@@ -78,7 +78,10 @@ $(document).ready(function() {
         },
         plotOptions: {
             area: {
-                fillOpacity: 0.5
+                fillOpacity: 0.5/*,
+                dataLabels: {
+                    enabled: true
+                }*/
             }
         },
         series: [{

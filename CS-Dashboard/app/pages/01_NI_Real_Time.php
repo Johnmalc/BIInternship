@@ -1,4 +1,4 @@
-<php
+<?php
 if (!session_id()) session_start();
     if (!$_SESSION['logon']){ 
         header("Location:table.php");
@@ -57,9 +57,6 @@ if (!session_id()) session_start();
 
         <div class="container-fluid">
             <div class="row">
-                <!--<div class="col-lg-5">
-                    <img src="support_img/logo.jpg" width="450" height="80">
-                </div>-->
                 <div class="col-lg-9 col-lg-offset-3">
                     <h1>Value Orders Created in TEUR at t:m Group</h1>
                 </div>
@@ -94,8 +91,8 @@ if (!session_id()) session_start();
             <div class="row">
                 <footer id="footer" >
                     <table>
-                        <tbody  >
-                            <tr style="">
+                        <tbody>
+                            <tr>
                                 <td class="time" style="font-size:33px;">
                                     <script type="text/javascript">date_time('date_time')</script> 
                                 </td>

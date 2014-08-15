@@ -36,7 +36,10 @@ $(function () {
                 pointPadding: 0.2,
                 //colorByPoint: true,
                 //colors: ['#e4d354', '#e4m3p4', '#e4r354'],
-                borderWidth: 0
+                borderWidth: 0, 
+                dataLabels: {
+                    enabled: true
+                }
             }
         },
         series: []

@@ -2,11 +2,10 @@
 
 if (!session_id()) session_start();
     if (!$_SESSION['logon']){ 
-        header("Location:table.php");
+        header("Location:index.php");
         die();
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,8 +29,8 @@ if (!session_id()) session_start();
 
     <body>
         <div class="container-fluid">
-            <div class="row clearfix">
-                <div class="col-md-12 column">
+            <div class="row padding">
+                <div class="col-lg-12">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -46,25 +45,25 @@ if (!session_id()) session_start();
                                 <td>1</td>
                                 <td>Created Directly from SAS</td>
                                 <td><a href="/pages/01_NI_Real_Time.php">01_Ni_Real_Time.php</a></td>
-                                <td>Killed-nobody like it</td>
+                                <td>No Status</td>
                             </tr>
                             <tr class="warning">
                                 <td>2</td>
                                 <td>Too</td>
                                 <td><a href="/pages/02_NI_SD_ELog_Last_12_Weeks.php">02_NI_SD_ELog_Last_12_Weeks.php</a></td>
-                                <td>Too</td>
+                                <td>No Status</td>
                             </tr>
                             <tr class="warning">
                                 <td>3</td>
                                 <td>Created from Excel File/Marco</td>
                                 <td><a href="/pages/03_ZXO_Elog_Market_Rev.php">03_ZXO_Elog_Market_Rev.php</a></td>
-                                <td>Too</td>
+                                <td>No Status</td>
                             </tr>
                             <tr class="warning">
                                 <td>4</td>
                                 <td>Too</td>
                                 <td><a href="/pages/04_SD_Air_Rail_Market_Rev.php">04_SD_Air_Rail_Market_Rev.php</a></td>
-                                <td>Too</td>
+                                <td>No Status</td>
                             </tr>
                             <tr class="danger">
                                 <td>5</td>
@@ -72,56 +71,56 @@ if (!session_id()) session_start();
                                 <td><a href="/pages/05_Button_Change.php">05_Button_Change.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="warning">
                                 <td>6</td>
                                 <td>Combination of 1st and 2nd</td>
                                 <td><a href="/pages/06_All_in_One.php">06_All_in_One.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>7</td>
                                 <td>Angular Gauge with <a href="http://www.highcharts.com/demo/gauge-speedometer">HighCharts</a></td>
                                 <td><a href="/pages/07.php">07.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>8</td>
                                 <td>Line Chart with streaming (live) data <a href="http://www.highcharts.com/demo/dynamic-update/">HighCharts</a> </td>
                                 <td><a href="/pages/08.php">08.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>9</td>
-                                <td>Column Chart (grouped) <a href="http://www.highcharts.com/demo/column-negative">HighChart</a></td>
+                                <td>Column Chart (grouped) and Last 12 Weeks together <a href="http://www.highcharts.com/demo/column-negative">HighChart</a></td>
                                 <td><a href="/pages/09.php">09.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>10</td>
                                 <td>Combination of <a href="http://www.highcharts.com/demo/column-stacked">Stacked Columns</a> and example above</td>
                                 <td><a href="/pages/10.php">10.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>11</td>
                                 <td>Solid gauge <a href="http://www.highcharts.com/demo/gauge-solid">HighCharts</a></td>
                                 <td><a href="/pages/11.php">11.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>12</td>
                                 <td>Combination of columns and line (and dual axes) <a href="http://www.highcharts.com/demo/combo-dual-axes">HighCharts</a></td>
                                 <td><a href="/pages/12.php">12.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
+                            <tr class="info">
                                 <td>14</td>
                                 <td>Area Chart (Reverted)</td>
                                 <td><a href="/pages/14.php">14.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="success">
-                                <td>14</td>
+                            <tr class="info">
+                                <td>15</td>
                                 <td>Pia Chart </td>
                                 <td><a href="/pages/15.php">15.php</a></td>
                                 <td>No Status</td>
