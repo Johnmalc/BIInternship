@@ -125,6 +125,12 @@ if (!session_id()) session_start();
                                 <td><a href="/pages/15.php">15.php</a></td>
                                 <td>No Status</td>
                             </tr>
+                                <tr class="info">
+                                <td>16</td>
+                                <td>Some 3D options</td>
+                                <td><a href="/pages/16.php">16.php</a></td>
+                                <td>No Status</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

@@ -1,5 +1,6 @@
 
 var chart; // global
+var chart2;
 /**
  * Request data from the server, add it to the graph and set a timeout 
  * to request again
@@ -23,7 +24,11 @@ function requestData() {
             for (var i = 0; i < point.length; i++) {
                 chart.series[0].addPoint(point[i],true);
                 // chart.series[1].addPoint(drRada[i],true); 
-            };                  
+            };         
+            for (var i = 0; i < point.length; i++) {
+                chart2.series[0].addPoint(point[i],true);
+                // chart.series[1].addPoint(drRada[i],true); 
+            };           
         },
         cache: false
     });
@@ -33,12 +38,14 @@ $(document).ready(function() {
    chart = new Highcharts.Chart({
         chart: {
             type: 'pie',
-            renderTo: 'container',
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: true,
             events: {
                 load: requestData
+            },
+            renderTo: 'container',
+            options3d: {
+                enabled: true,
+                alpha: 45,
+                beta: 0
             }
         },
         title: {
@@ -51,15 +58,45 @@ $(document).ready(function() {
             pie: {
                 allowPointSelect: true,
                 cursor: 'pointer',
+                depth: 35,
                 dataLabels: {
                     enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                },
-                depth: 35,
-                showInLegend: false //true
+                    format: '{point.name}'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: []
+        }]
+
+    });
+});
+
+$(document).ready(function() {
+   chart2 = new Highcharts.Chart({
+        chart: {
+            type: 'pie',
+            /*events: {
+                load: requestData
+            },*/
+            renderTo: 'dole',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: 'More than 6 shipments per agent (creator) during last 7 days'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}</b>'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 100,
+                depth: 45
             }
         },
         series: [{
