@@ -74,7 +74,8 @@ $(document).ready(function() {
                     return this.value;
                 }
             },
-            min: 0
+            min: 0,
+ 	    allowDecimals: false
         },
         plotOptions: {
             area: {

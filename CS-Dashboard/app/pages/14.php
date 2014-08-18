@@ -23,10 +23,12 @@ if (!session_id()) session_start();
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <script type="text/javascript" src="/scripts/graphics14.js"></script>
+        <script type="text/javascript" src="/scripts/graphics12.js"></script>
     </head>
 
     <body>        
         <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    	<div id="novy" style="min-width: 310px; height: 400px; margin: 0 auto"></div>	 <!-- 12 -->
 
         <script type="text/javascript">
             setTimeout(function () { 

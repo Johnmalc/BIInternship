@@ -1,11 +1,11 @@
 
-var chart; // global
-var chart2;
+var chart3; // global
+var chart4;
 /**
  * Request data from the server, add it to the graph and set a timeout 
  * to request again
  */
-function requestData() {
+function requestData16() {
     //var firtst = null;
     $.ajax({
         url: '../json3.php',
@@ -22,11 +22,11 @@ function requestData() {
             console.log(point[6]);
 
             for (var i = 0; i < point.length; i++) {
-                chart.series[0].addPoint(point[i],true);
+                chart3.series[0].addPoint(point[i],true);
                 // chart.series[1].addPoint(drRada[i],true); 
             };         
             for (var i = 0; i < point.length; i++) {
-                chart2.series[0].addPoint(point[i],true);
+                chart4.series[0].addPoint(point[i],true);
                 // chart.series[1].addPoint(drRada[i],true); 
             };           
         },
@@ -35,13 +35,13 @@ function requestData() {
 }
 
 $(document).ready(function() {
-   chart = new Highcharts.Chart({
+   chart3 = new Highcharts.Chart({
         chart: {
             type: 'pie',
             events: {
-                load: requestData
+                load: requestData16
             },
-            renderTo: 'container',
+            renderTo: 'containerAgent',
             options3d: {
                 enabled: true,
                 alpha: 45,
@@ -52,7 +52,7 @@ $(document).ready(function() {
             text: 'More than 6 shipments per agent (creator) during last 7 days'
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}</b>'
+            pointFormat: '{series.name}: <b>{point.y:.1f}</b>'
         },
         plotOptions: {
             pie: {
@@ -75,7 +75,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-   chart2 = new Highcharts.Chart({
+   chart4 = new Highcharts.Chart({
         chart: {
             type: 'pie',
             /*events: {

@@ -77,6 +77,12 @@ if (!session_id()) session_start();
                                 <td><a href="/pages/06_All_in_One.php">06_All_in_One.php</a></td>
                                 <td>No Status</td>
                             </tr>
+                            <tr class="warning">
+                                <td>6</td>
+                                <td>Dashboard with new graphics</td>
+                                <td><a href="/pages/06_All_in_One_WithNew.php">06_All_in_One_WithNew.php</a></td>
+                                <td>No Status</td>
+                            </tr>
                             <tr class="info">
                                 <td>7</td>
                                 <td>Angular Gauge with <a href="http://www.highcharts.com/demo/gauge-speedometer">HighCharts</a></td>
@@ -108,14 +114,8 @@ if (!session_id()) session_start();
                                 <td>No Status</td>
                             </tr>
                             <tr class="info">
-                                <td>12</td>
-                                <td>Combination of columns and line (and dual axes) <a href="http://www.highcharts.com/demo/combo-dual-axes">HighCharts</a></td>
-                                <td><a href="/pages/12.php">12.php</a></td>
-                                <td>No Status</td>
-                            </tr>
-                            <tr class="info">
                                 <td>14</td>
-                                <td>Area Chart (Reverted)</td>
+                                <td>Combination of columns and line (and dual axes) &&&&& Area Chart (Reverted) <a href="http://www.highcharts.com/demo/combo-dual-axes">HighCharts</a></td>
                                 <td><a href="/pages/14.php">14.php</a></td>
                                 <td>No Status</td>
                             </tr>

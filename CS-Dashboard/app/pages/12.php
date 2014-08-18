@@ -28,7 +28,7 @@ if (!session_id()) session_start();
     </head>
 
     <body>        
-        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        <div id="novy" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
        <!-- <div id="test" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
 
         <script type="text/javascript">

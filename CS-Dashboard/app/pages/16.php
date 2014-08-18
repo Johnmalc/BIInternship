@@ -30,7 +30,7 @@ if (!session_id()) session_start();
 
     <body>     
     <div class="row col-lg-12">
-        <div id="container" style="height: 400px"></div>
+        <div id="containerAgent" style="height: 400px"></div>
 
         <div id="dole" style="height: 400px"></div>
 

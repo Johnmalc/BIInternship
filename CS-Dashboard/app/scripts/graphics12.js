@@ -1,17 +1,17 @@
 
-    var chart; // global
+    var chart12; // global
     /**
      * Request data from the server, add it to the graph and set a timeout 
      * to request again
      * POZOR:Iprava nutna v SASu, jinak bude stejne prepsan.
      */
-    function requestData() {
+    function request() {
         //var firtst = null;
         $.ajax({
             url: '../json.php',
             success: function(point) {
-                var series = chart.series[0],
-                    seri = chart.series[1],
+                var series = chart12.series[0],
+                    seri = chart12.series[1],
                     shift = series.data.length > 12; 
 
                     console.log(series);
@@ -21,8 +21,8 @@
                     //console.log(firtst);
                     //console.log(second);
                     for (i = 0; i < firtst.length; i++) {
-                        chart.series[0].addPoint(firtst[i], true, shift);
-                        chart.series[1].addPoint(second[i], true, shift);
+                        chart12.series[0].addPoint(firtst[i], true, shift);
+                        chart12.series[1].addPoint(second[i], true, shift);
                     }
                 // call it again after one second
                 // setTimeout(requestData, 5000);    
@@ -32,12 +32,12 @@
     }
 
    $(document).ready(function() {
-        chart = new Highcharts.Chart({
+        chart12 = new Highcharts.Chart({
             chart: {
-                renderTo: 'container',
+                renderTo: 'novy',
                 zoomType: 'xy',
                 events: {
-                    load: requestData
+                    load: request
                 }
             },
             title: {
