@@ -62,21 +62,25 @@
                     style: {
                         color: Highcharts.getOptions().colors[1]
                     }
-                }
+                },
+		floor: 0, 
+		ceiling: 2000
             }, { // Secondary yAxis
+                labels: {
+                    format: ' {value} TUER',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                },
                 title: {
                     text: 'PY',
                     style: {
                         color: Highcharts.getOptions().colors[0]
                     }
                 },
-                labels: {
-                    format: '{value} TUER',
-                    style: {
-                        color: Highcharts.getOptions().colors[0]
-                    }
-                },
-                opposite: true
+                opposite: true,
+		floor: 0, 
+		ceiling: 2000
             }],
             tooltip: {
                 shared: true
@@ -110,10 +114,10 @@
             } , {
                 name: 'PY',
                 type: 'spline',
-                data: [],
+                data: []/*,
                 tooltip: {
                     valueSuffix: 'TUER'
-                }
+                }*/
             }]
         });
     });
