@@ -30,7 +30,7 @@ if (!session_id()) session_start();
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <script src="http://code.highcharts.com/highcharts-3d.js"></script>
         <script type="text/javascript" src="/scripts/AjaxCallsCSV.js"></script>
-        <script type="text/javascript" src="/scripts/graphics9.js"></script>
+        <script type="text/javascript" src="/scripts/graphics19.js"></script>
         <script type="text/javascript" src="/scripts/graphics14.js"></script>
         <script type="text/javascript" src="/scripts/graphics12.js"></script>
         <script type="text/javascript" src="/scripts/graphics16.js"></script>
