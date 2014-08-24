@@ -55,6 +55,9 @@ $(document).ready(function() {
         },
         yAxis: {
             min: 0,
+	    max: 30,
+            // minorTickInterval: 'auto',
+	    tickInterval: 5,
             title: {
                 text: 'Revenue'
             }
@@ -71,10 +74,11 @@ $(document).ready(function() {
             }
         },
         series: [{
-            name: "Actual",
+            name: "Budget",
+	    color: '#FF0000',
             data: []
         },{
-            name: "Budget",
+            name: "Actual",
             data: []
         }]
     });

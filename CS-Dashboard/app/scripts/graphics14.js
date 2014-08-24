@@ -75,6 +75,7 @@ $(document).ready(function() {
                 }
             },
             min: 0,
+ 	    max: 20,
  	    allowDecimals: false
         },
         plotOptions: {
