@@ -11,6 +11,7 @@ if (!session_id()) session_start();
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
         <title>CS Dashboard</title>
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -24,13 +25,11 @@ if (!session_id()) session_start();
         <!-- endbower -->
         <!-- endbuild -->
         <link href="/styles/styles.css" rel="stylesheet">
+        <script type="text/javascript" src="/scripts/csv.js"></script>
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
-        <script type="text/javascript" src="/scripts/csv.js"></script>
         <script type="text/javascript" src="/scripts/AjaxCallsCSV.js"></script>
-        <script type="text/javascript" src="/scripts/papaparse.js"></script>
-        <script type="text/javascript" src="/scripts/graphics20.js"></script>
-        <script type="text/javascript" src="/scripts/graphics21.js"></script>
+        <script type="text/javascript" src="/scripts/graphics12.js"></script>
     </head>
 
     <body>
@@ -40,25 +39,24 @@ if (!session_id()) session_start();
             }, 60000);
             doAJAXRevenue('../csv/RealTimeRevenueFooter.csv');
         </script> 
-
+        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-3">
-                    <h1>Monthly Sameday Market Rev. in TEUR</h1>
+                    <h1>Monthly E-Log Market Rev. in TEUR</h1>
                 </div>
             </div>
              
             <div class="row nahoru">    
-                <div class=" col-lg-8">
-                    <div id="samedayair" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 20 -->
- 		    <div id="samedayrail" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 21 -->
+                <div class="col-lg-8">
+                    <div id="elog" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 12 -->
                 </div>
             </div>
 
             <div class="row">
                 <footer id="footer" >
                     <table>
-                        <tbody  >
+                        <tbody >
                             <tr style="">
                                 <td class="time" style="font-size:33px;">
                                     <script type="text/javascript">date_time('date_time')</script> 

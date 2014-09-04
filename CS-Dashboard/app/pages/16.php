@@ -26,13 +26,15 @@ if (!session_id()) session_start();
         <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <script src="http://code.highcharts.com/highcharts-3d.js"></script>
         <script type="text/javascript" src="/scripts/graphics16.js"></script>
+        <script type="text/javascript" src="/scripts/graphics15.js"></script>
     </head>
 
     <body>     
     <div class="row col-lg-12">
         <div id="containerAgent" style="height: 400px"></div>
-
-        <div id="dole" style="height: 400px"></div>
+   	<div id="dole" style="height: 400px"></div>
+	<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+  
 
     </div>   
 	

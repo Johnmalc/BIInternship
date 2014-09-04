@@ -55,8 +55,14 @@ if (!session_id()) session_start();
                             </tr>
                             <tr class="warning">
                                 <td>3</td>
-                                <td>Created from Excel File/Marco</td>
+                                <td>Highcharts Elog/ZXO together </td>
                                 <td><a href="/pages/03_ZXO_Elog_Market_Rev.php">03_ZXO_Elog_Market_Rev.php</a></td>
+                                <td>No Status</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>17</td>
+                                <td>Splited <a href="/pages/03_ZXO_Market_Rev.php">03_ZXO_Market_Rev.php</a></td>
+                                <td><a href="/pages/03_Elog_Market_Rev.php">03_Elog_Market_Rev.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="warning">
@@ -65,7 +71,13 @@ if (!session_id()) session_start();
                                 <td><a href="/pages/04_SD_Air_Rail_Market_Rev.php">04_SD_Air_Rail_Market_Rev.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="danger">
+                            <tr class="warning">
+                                <td>18</td>
+                                <td>Too <a href="/pages/04_SD_Air_Market_Rev.php">04_SD_Air_Market_Rev.php</a></td>
+                                <td><a href="/pages/04_SD_Rail_Market_Rev.php">04_SD_Rail_Market_Rev.php</a></td>
+                                <td>No Status</td>
+                            </tr>
+                            <tr class="warning">
                                 <td>5</td>
                                 <td>Change Colors of Background</td>
                                 <td><a href="/pages/05_Button_Change.php">05_Button_Change.php</a></td>
@@ -74,13 +86,13 @@ if (!session_id()) session_start();
                             <tr class="warning">
                                 <td>6</td>
                                 <td>Combination of 1st and 2nd</td>
-                                <td><a href="/pages/06_All_in_One.php">06_All_in_One.php</a></td>
+                                <td><a href="/pages/06_All_in_One.php">Classic_dashboard.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="warning">
                                 <td>6</td>
                                 <td>Dashboard with new graphics</td>
-                                <td><a href="/pages/06_All_in_One_WithNew.php">06_All_in_One_WithNew.php</a></td>
+                                <td><a href="/pages/06_All_in_One_WithNew.php">Pos_dashboard.php</a></td>
                                 <td>No Status</td>
                             </tr>
                             <tr class="info">
@@ -119,17 +131,17 @@ if (!session_id()) session_start();
                                 <td><a href="/pages/14.php">14.php</a></td>
                                 <td>No Status</td>
                             </tr>
-                            <tr class="info">
+                            <!-- <tr class="info">
                                 <td>15</td>
                                 <td>Pia Chart </td>
                                 <td><a href="/pages/15.php">15.php</a></td>
                                 <td>No Status</td>
-                            </tr>
-                                <tr class="info">
+                            </tr> -->
+                            <tr class="info">
                                 <td>16</td>
-                                <td>Some 3D options</td>
+                                <td>Pia Charts and some 3D options</td>
                                 <td><a href="/pages/16.php">16.php</a></td>
-                                <td>No Status</td>
+                                <td><a href="http://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/heatmap/">HeatMap Test</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -158,10 +170,6 @@ if (!session_id()) session_start();
         <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="../bower_components/bootstrap/js/collapse.js"></script>
         <script src="../bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
         <!-- endbuild -->
     </body>
 </html>

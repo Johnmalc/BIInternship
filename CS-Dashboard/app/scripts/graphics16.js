@@ -49,7 +49,7 @@ $(document).ready(function() {
             }
         },
         title: {
-            text: 'More than 6 shipments per agent (creator) during last 7 days'
+            text: '(Creating) Agents with more than 6 shipments during last 7 days'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.y:.1f}</b>'
@@ -88,7 +88,7 @@ $(document).ready(function() {
             }
         },
         title: {
-            text: 'More than 6 shipments per agent (creator) during last 7 days'
+            text: '(Creating) Agents with more than 6 shipments during last 7 days'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}</b>'

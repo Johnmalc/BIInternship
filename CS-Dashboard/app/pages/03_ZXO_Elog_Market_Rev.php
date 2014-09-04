@@ -26,7 +26,11 @@ if (!session_id()) session_start();
         <!-- endbuild -->
         <link href="/styles/styles.css" rel="stylesheet">
         <script type="text/javascript" src="/scripts/csv.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/highcharts-more.js"></script>
         <script type="text/javascript" src="/scripts/AjaxCallsCSV.js"></script>
+        <script type="text/javascript" src="/scripts/graphics12.js"></script>
+        <script type="text/javascript" src="/scripts/graphics22.js"></script>
     </head>
 
     <body>
@@ -39,18 +43,15 @@ if (!session_id()) session_start();
         
         <div class="container-fluid">
             <div class="row">
-                <!--<div class="col-lg-5">
-                    <img src="support_img/logo.jpg" width="450" height="80">
-                </div>-->
                 <div class="col-lg-9 col-lg-offset-3">
-                    <h1>WKLY ZXO/E-Log Market Rev. in TEUR</h1>
+                    <h1>Monthly ZXO/E-Log Market Rev. in TEUR</h1>
                 </div>
             </div>
              
             <div class="row nahoru">    
                 <div class="col-lg-8">
-                    <img src="/img/elog_market_rev.png" height="360" width="1300"> 
-                    <img src="/img/zxo_market_rev.png" height="360" width="1300">
+                    <div id="elog" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 12 -->
+		    <div id="zxo" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 22 -->
                 </div>
             </div>
 

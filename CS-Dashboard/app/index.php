@@ -3,7 +3,8 @@
 
     $userinfo = array(
                     'tm'=>'Osvlad!2',
-                    'admin'=>'sca()'
+                    'admin'=>'sca()',
+                    'time' => 'matters'
     );
 
     if(isset($_GET['logout'])) {
@@ -45,9 +46,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <?php if($_SESSION['username']): ?>
-            <p>You are logged in as <?=$_SESSION['username']?></p>
-            <p>Follow an overview of already existing pages <a href="/table.php">here</a></p>
-            <p><a href="?logout=1">Logout</a></p>
+            <h3>You are logged in as <?=$_SESSION['username']?></h3>
+            <h3>Follow an overview of already existing pages <a href="/table.php">here</a></h3>
+            <h3><a href="?logout=1">Logout</a></h3>
         <?php endif; ?>
 
         <div class="container">
@@ -96,10 +97,6 @@
         <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="../bower_components/bootstrap/js/collapse.js"></script>
         <script src="../bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>

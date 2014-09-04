@@ -29,7 +29,6 @@ if (!session_id()) session_start();
         <script type="text/javascript" src="/scripts/csv.js"></script>
         <script type="text/javascript" src="/scripts/AjaxCallsCSV.js"></script>
         <script type="text/javascript" src="/scripts/papaparse.js"></script>
-        <script type="text/javascript" src="/scripts/graphics20.js"></script>
         <script type="text/javascript" src="/scripts/graphics21.js"></script>
     </head>
 
@@ -44,13 +43,12 @@ if (!session_id()) session_start();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9 col-lg-offset-3">
-                    <h1>Monthly Sameday Market Rev. in TEUR</h1>
+                    <h1>Monthly Sameday Rail Market Rev. in TEUR</h1>
                 </div>
             </div>
              
             <div class="row nahoru">    
                 <div class=" col-lg-8">
-                    <div id="samedayair" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 20 -->
  		    <div id="samedayrail" style="height:400px; width:1150px; margin: auto 0"></div>    <!-- 21 -->
                 </div>
             </div>
