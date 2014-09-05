@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 if (!session_id()) session_start();
-    if (!$_SESSION['logon']){ 
+    if (!$_SESSION['logon']){
         header("Location:index.php");
         die();
     }
@@ -22,9 +22,6 @@ if (!session_id()) session_start();
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/styles.css">
         <!-- endbuild -->
-        <script type="text/javascript" src="/scripts/csv.js"></script>
-        <script type="text/javascript" src="/scripts/AjaxCallsCSV.js"></script>
-        <script type="text/javascript" src="/scripts/ion.sound.min.js"></script>
     </head>
 
     <body>
@@ -36,7 +33,7 @@ if (!session_id()) session_start();
                             <tr>
                                 <th>#</th>
                                 <th>Type & Library</th>
-                                <th>Link</th> 
+                                <th>Link</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
